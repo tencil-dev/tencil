@@ -1,0 +1,35 @@
+{
+  "name": "@tencil/core",
+  "version": "0.1.0",
+  "description": "Core types and validation for the Tencil universal design translation protocol",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm",
+    "test": "vitest",
+    "dev": "tsup src/index.ts --dts --format esm --watch"
+  },
+  "keywords": [
+    "design",
+    "translation",
+    "protocol",
+    "schema"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "tsup": "^8.0.0"
+  },
+  "dependencies": {
+    "zod": "^3.22.0"
+  }
+}

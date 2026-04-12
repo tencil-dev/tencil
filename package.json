@@ -1,0 +1,29 @@
+{
+  "name": "tencil",
+  "version": "0.1.0",
+  "description": "Universal design translation protocol bridging disconnected design tools",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "type-check": "tsc --noEmit",
+    "dev": "npm run dev --workspaces --if-present"
+  },
+  "keywords": [
+    "design",
+    "translation",
+    "protocol",
+    "ui",
+    "electronics",
+    "3d",
+    "cross-domain"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
