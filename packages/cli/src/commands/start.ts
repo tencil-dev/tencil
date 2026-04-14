@@ -93,10 +93,21 @@ async function promptText(
 }
 
 export async function startCommand(providedName?: string): Promise<void> {
-  const projectName =
-    providedName && providedName.trim()
-      ? providedName.trim()
-      : await promptText("Project name:", "my-tencil-project");
+  // Use TTY detection to handle tests and non-interactive environments
+  const isTTY = process.stdin.isTTY;
+
+  let projectName: string;
+
+  if (providedName !== undefined) {
+    // If name is explicitly provided, use it (even if empty - let validation catch it)
+    projectName = providedName.trim();
+  } else if (isTTY) {
+    // Interactive prompt only in TTY
+    projectName = await promptText("Project name:", "my-tencil-project");
+  } else {
+    // Non-TTY: use default
+    projectName = "my-tencil-project";
+  }
 
   if (!projectName || projectName.trim() === "") {
     logger.error("Project name is required.");
@@ -116,20 +127,24 @@ export async function startCommand(providedName?: string): Promise<void> {
   );
 
   // Domain selection
-  const domainIndex = await promptSelection(
-    "What domain are you working in?",
-    domains.map((d) => d.label),
-    0
-  );
+  const domainIndex = isTTY
+    ? await promptSelection(
+        "What domain are you working in?",
+        domains.map((d) => d.label),
+        0
+      )
+    : 0; // Default to UI/UX Design
 
   const selectedDomain = domains[domainIndex];
 
   // Target selection
-  const targetIndex = await promptSelection(
-    "Default export target?",
-    targets.map((t) => t.label),
-    0
-  );
+  const targetIndex = isTTY
+    ? await promptSelection(
+        "Default export target?",
+        targets.map((t) => t.label),
+        0
+      )
+    : 0; // Default to Pencil.dev
 
   const selectedTarget = targets[targetIndex];
 

@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import fs from "fs";
 import path from "path";
 import os from "os";
-import { createCommand } from "../src/commands/create.js";
+import { startCommand } from "../src/commands/start.js";
 import { validateCommand } from "../src/commands/validate.js";
 import { exportCommand } from "../src/commands/export.js";
 import { importCommand } from "../src/commands/import.js";
@@ -63,9 +63,9 @@ describe("tencil CLI commands", () => {
 
   // ─── create ──────────────────────────────────────────────────────────────
 
-  describe("create", () => {
+  describe("start", () => {
     it("should create project directory with project.tencil and .tencilrc", async () => {
-      await createCommand("my-project");
+      await startCommand("my-project");
 
       const projectDir = path.join(tmpDir, "my-project");
       expect(fs.existsSync(projectDir)).toBe(true);
@@ -74,7 +74,7 @@ describe("tencil CLI commands", () => {
     });
 
     it("should write valid .tencil file with correct project ID", async () => {
-      await createCommand("my-dashboard");
+      await startCommand("my-dashboard");
 
       const tencilPath = path.join(tmpDir, "my-dashboard", "project.tencil");
       const content = JSON.parse(fs.readFileSync(tencilPath, "utf-8"));
@@ -87,7 +87,7 @@ describe("tencil CLI commands", () => {
     });
 
     it("should write valid .tencilrc with project name", async () => {
-      await createCommand("sensor-ui");
+      await startCommand("sensor-ui");
 
       const rcPath = path.join(tmpDir, "sensor-ui", ".tencilrc");
       const rc = JSON.parse(fs.readFileSync(rcPath, "utf-8"));
@@ -101,11 +101,11 @@ describe("tencil CLI commands", () => {
     it("should exit if project directory already exists", async () => {
       fs.mkdirSync(path.join(tmpDir, "existing"));
 
-      await expect(createCommand("existing")).rejects.toThrow();
+      await expect(startCommand("existing")).rejects.toThrow();
     });
 
     it("should exit if name is empty", async () => {
-      await expect(createCommand("")).rejects.toThrow();
+      await expect(startCommand("")).rejects.toThrow();
     });
   });
 
