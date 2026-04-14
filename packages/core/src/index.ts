@@ -46,11 +46,12 @@ export type {
 export {
   parseTencilDocument,
   validateTencilDocument,
+  validateLinkIntegrity,
   TencilDocumentSchema,
   TencilNodeSchema,
   TencilLinkSchema,
 } from "./validate.js";
 
 // Version
-export const TENCIL_VERSION = "0.1.0";
+export const TENCIL_VERSION = "0.1.1";
 export const PROTOCOL_VERSION = "1.0";

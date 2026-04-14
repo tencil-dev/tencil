@@ -1,6 +1,6 @@
 {
   "name": "@tencil/core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Core types and validation for the Tencil universal design translation protocol",
   "license": "Apache-2.0",
   "type": "module",
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "tsup src/index.ts --dts --format esm",
-    "test": "vitest",
+    "test": "vitest --run",
     "dev": "tsup src/index.ts --dts --format esm --watch"
   },
   "keywords": [

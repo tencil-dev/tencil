@@ -3,25 +3,26 @@
     "target": "ES2020",
     "module": "ESNext",
     "lib": ["ES2020"],
-    "declaration": true,
-    "declarationMap": true,
-    "outDir": "./dist",
-    "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "@tencil/*": ["packages/*/src"]
+      "@tencil/core": ["packages/core/src"],
+      "@tencil/schema-ui": ["packages/schema-ui/src"],
+      "@tencil/adapter-penpot-in": ["packages/adapters/penpot-in/src"],
+      "@tencil/adapter-penpot-file-in": ["packages/adapters/penpot-file-in/src"],
+      "@tencil/adapter-penpot-out": ["packages/adapters/penpot-out/src"],
+      "@tencil/adapter-pencil-in": ["packages/adapters/pencil-in/src"],
+      "@tencil/adapter-pencil-out": ["packages/adapters/pencil-out/src"]
     }
   },
-  "include": ["packages/**/src"],
-  "exclude": ["node_modules", "dist", "**/*.test.ts"],
-  "files": []
+  "include": ["packages/**/src/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
 }

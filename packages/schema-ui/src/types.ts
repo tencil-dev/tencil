@@ -16,17 +16,26 @@ export type FlexDirection = "row" | "column";
 export type AlignmentMode = "start" | "center" | "end" | "space-between" | "space-around";
 
 /**
- * A frame is a container for UI elements with optional flex layout.
+ * A frame is a container for UI elements with optional flex or grid layout.
  * Equivalent to Penpot/Figma "board" or "frame".
+ *
+ * Layout capability tiers:
+ * - Tier 1: "none" (absolute positioning) — supported by all tools
+ * - Tier 2: "flex" (flex layout) — supported by Pencil, Penpot, Figma
+ * - Tier 3: "grid" (CSS grid layout) — supported by Penpot, not Pencil
  */
 export interface TencilFrame extends TencilNodeBase {
   type: "frame";
-  /** Layout mode: none (absolute) or flex */
-  layout?: "flex" | "none";
+  /** Layout mode: none (absolute), flex, or grid */
+  layout?: "none" | "flex" | "grid";
   /** Direction of flex layout */
   flexDirection?: FlexDirection;
   /** Flex gap/spacing */
   gap?: number;
+  /** Main axis alignment (justify-content in CSS) */
+  justifyContent?: "start" | "center" | "end" | "space-between" | "space-around";
+  /** Cross axis alignment (align-items in CSS) */
+  alignItems?: "start" | "center" | "end" | "stretch";
   /** Padding inside the frame */
   padding?: number | { top: number; right: number; bottom: number; left: number };
   /** Background fill color (hex) */
@@ -37,6 +46,8 @@ export interface TencilFrame extends TencilNodeBase {
   strokeThickness?: number;
   /** Corner radius */
   cornerRadius?: number | [number, number, number, number];
+  /** CSS grid template (Tier 3, preserved as metadata, not translated to Pencil) */
+  gridTemplate?: string;
 }
 
 /**

@@ -1,32 +1,10 @@
 /**
- * @tencil/cli
- * Command-line interface for the Tencil design translation protocol.
- * Exports programmatic access to CLI operations for integration.
+ * @tencil/cli — Programmatic API for Tencil CLI operations.
+ * Import this to use CLI commands as functions in your own scripts.
  */
 
-export async function createProject(
-  _name: string,
-  _options?: { description?: string }
-): Promise<void> {
-  throw new Error("createProject: Not yet implemented");
-}
-
-export async function exportDesign(
-  _from: string,
-  _to: string,
-  _options?: { output?: string }
-): Promise<void> {
-  throw new Error("exportDesign: Not yet implemented");
-}
-
-export async function importDesign(
-  _from: string,
-  _to: string,
-  _options?: { output?: string }
-): Promise<void> {
-  throw new Error("importDesign: Not yet implemented");
-}
-
-export async function validateFile(_filePath: string): Promise<boolean> {
-  throw new Error("validateFile: Not yet implemented");
-}
+export { createCommand } from "./commands/create.js";
+export { exportCommand } from "./commands/export.js";
+export { importCommand } from "./commands/import.js";
+export { validateCommand } from "./commands/validate.js";
+export { logger } from "./logger.js";

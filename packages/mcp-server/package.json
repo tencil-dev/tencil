@@ -1,9 +1,12 @@
 {
   "name": "@tencil/mcp-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server for Tencil — enables AI agents to work with design documents",
   "license": "Apache-2.0",
   "type": "module",
+  "bin": {
+    "tencil-mcp": "dist/server.js"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -13,13 +16,15 @@
     }
   },
   "scripts": {
-    "build": "tsup src/index.ts --dts --format esm",
-    "test": "vitest",
-    "dev": "tsup src/index.ts --dts --format esm --watch"
+    "build": "tsup src/index.ts src/server.ts --dts --format esm",
+    "test": "vitest --run",
+    "dev": "tsup src/index.ts src/server.ts --dts --format esm --watch"
   },
   "dependencies": {
-    "@tencil/core": "file:../core",
-    "@tencil/schema-ui": "file:../schema-ui"
+    "@tencil/core": "workspace:*",
+    "@tencil/schema-ui": "workspace:*",
+    "@tencil/adapter-penpot-in": "workspace:*",
+    "@tencil/adapter-pencil-out": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",

@@ -1,6 +1,6 @@
 {
   "name": "@tencil/schema-ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "UI/UX domain schema for Tencil — frames, text, shapes, and layout",
   "license": "Apache-2.0",
   "type": "module",
@@ -14,11 +14,11 @@
   },
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts",
-    "test": "vitest",
+    "test": "vitest --run",
     "dev": "tsup src/index.ts --format esm --dts --watch"
   },
   "dependencies": {
-    "@tencil/core": "file:../core"
+    "@tencil/core": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",

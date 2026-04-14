@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest";
 import {
   parseTencilDocument,
   validateTencilDocument,
+  validateLinkIntegrity,
   type TencilDocument,
 } from "../src/index.js";
 
@@ -216,6 +217,143 @@ describe("@tencil/core", () => {
       };
 
       const result = validateTencilDocument(doc);
+      expect(result.success).toBe(true);
+    });
+  });
+
+  describe("validateLinkIntegrity", () => {
+    it("should validate links with all nodes present", () => {
+      const doc: TencilDocument = {
+        tencil: "1.0",
+        domain: "multi",
+        id: "test",
+        nodes: [
+          { id: "node-a", type: "button" },
+          { id: "node-b", type: "pin" },
+        ],
+        links: [
+          {
+            id: "link-1",
+            source: { domain: "ui", nodeId: "node-a" },
+            target: { domain: "ee", nodeId: "node-b" },
+            type: "controls",
+          },
+        ],
+      };
+
+      const result = validateLinkIntegrity(doc);
+      expect(result.success).toBe(true);
+    });
+
+    it("should reject links with missing source node", () => {
+      const doc: TencilDocument = {
+        tencil: "1.0",
+        domain: "multi",
+        id: "test",
+        nodes: [
+          { id: "node-b", type: "pin" },
+        ],
+        links: [
+          {
+            id: "link-1",
+            source: { domain: "ui", nodeId: "nonexistent" },
+            target: { domain: "ee", nodeId: "node-b" },
+            type: "controls",
+          },
+        ],
+      };
+
+      const result = validateLinkIntegrity(doc);
+      expect(result.success).toBe(false);
+      if (!result.success) {
+        expect(result.errors).toHaveLength(1);
+        expect(result.errors[0].message).toContain("Source node not found");
+      }
+    });
+
+    it("should reject links with missing target node", () => {
+      const doc: TencilDocument = {
+        tencil: "1.0",
+        domain: "multi",
+        id: "test",
+        nodes: [
+          { id: "node-a", type: "button" },
+        ],
+        links: [
+          {
+            id: "link-1",
+            source: { domain: "ui", nodeId: "node-a" },
+            target: { domain: "ee", nodeId: "nonexistent" },
+            type: "controls",
+          },
+        ],
+      };
+
+      const result = validateLinkIntegrity(doc);
+      expect(result.success).toBe(false);
+      if (!result.success) {
+        expect(result.errors).toHaveLength(1);
+        expect(result.errors[0].message).toContain("Target node not found");
+      }
+    });
+
+    it("should report all missing nodes in multiple links", () => {
+      const doc: TencilDocument = {
+        tencil: "1.0",
+        domain: "multi",
+        id: "test",
+        nodes: [
+          { id: "node-a", type: "button" },
+        ],
+        links: [
+          {
+            id: "link-1",
+            source: { domain: "ui", nodeId: "missing-1" },
+            target: { domain: "ee", nodeId: "missing-2" },
+            type: "controls",
+          },
+          {
+            id: "link-2",
+            source: { domain: "ui", nodeId: "node-a" },
+            target: { domain: "ee", nodeId: "missing-3" },
+            type: "displays",
+          },
+        ],
+      };
+
+      const result = validateLinkIntegrity(doc);
+      expect(result.success).toBe(false);
+      if (!result.success) {
+        expect(result.errors.length).toBeGreaterThanOrEqual(3);
+      }
+    });
+
+    it("should pass for document with no links", () => {
+      const doc: TencilDocument = {
+        tencil: "1.0",
+        domain: "ui",
+        id: "test",
+        nodes: [
+          { id: "node-a", type: "button" },
+        ],
+      };
+
+      const result = validateLinkIntegrity(doc);
+      expect(result.success).toBe(true);
+    });
+
+    it("should pass for document with empty links array", () => {
+      const doc: TencilDocument = {
+        tencil: "1.0",
+        domain: "multi",
+        id: "test",
+        nodes: [
+          { id: "node-a", type: "button" },
+        ],
+        links: [],
+      };
+
+      const result = validateLinkIntegrity(doc);
       expect(result.success).toBe(true);
     });
   });

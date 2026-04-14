@@ -51,6 +51,8 @@ export interface TencilNodeBase extends TencilGeometry {
   type: string;
   /** Optional name for the node */
   name?: string;
+  /** Optional parent node ID — enables hierarchy within a document */
+  parentId?: string;
   /** Optional description or metadata */
   metadata?: Record<string, unknown>;
 }

@@ -1,6 +1,6 @@
 {
   "name": "tencil",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Universal design translation protocol bridging disconnected design tools",
   "private": true,
   "license": "Apache-2.0",
@@ -24,6 +24,7 @@
     "node": ">=18.0.0"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "packages/adapters/*"
   ]
 }

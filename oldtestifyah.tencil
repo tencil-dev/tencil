@@ -1,0 +1,5788 @@
+{
+  "tencil": "1.0",
+  "domain": "ui",
+  "id": "testifyah",
+  "name": "Testifyah",
+  "metadata": {
+    "sourceFile": "testifyah.pen",
+    "exportedAt": "2026-04-12T23:40:49.072Z",
+    "totalNodes": 355
+  },
+  "nodes": [
+    {
+      "id": "bi8Au",
+      "type": "frame",
+      "name": "Witness Wall",
+      "x": 0,
+      "y": 6960,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09",
+      "clip": true
+    },
+    {
+      "id": "drn7y",
+      "type": "frame",
+      "name": "Status Bar",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 62,
+      "metadata": {
+        "parentId": "bi8Au"
+      },
+      "padding": [
+        0,
+        20,
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "Ve6sz",
+      "type": "frame",
+      "name": "Header",
+      "x": 0,
+      "y": 62,
+      "width": 390,
+      "height": 56,
+      "metadata": {
+        "parentId": "bi8Au"
+      },
+      "padding": [
+        0,
+        20,
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "vU9jd",
+      "type": "rectangle",
+      "name": "Header Divider",
+      "x": 0,
+      "y": 118,
+      "width": 390,
+      "height": 1,
+      "metadata": {
+        "parentId": "bi8Au"
+      },
+      "fillColor": "#1c1917"
+    },
+    {
+      "id": "A78hV",
+      "type": "frame",
+      "name": "Feed Tabs",
+      "x": 0,
+      "y": 119,
+      "width": 390,
+      "height": 44,
+      "metadata": {
+        "parentId": "bi8Au"
+      },
+      "gap": 20,
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "alignItems": "end"
+    },
+    {
+      "id": "9a0CL",
+      "type": "frame",
+      "name": "Category Pills",
+      "x": 0,
+      "y": 163,
+      "width": 390,
+      "height": 48,
+      "metadata": {
+        "parentId": "bi8Au"
+      },
+      "gap": 6,
+      "padding": [
+        0,
+        16
+      ],
+      "fillColor": "#0C0A09",
+      "alignItems": "center"
+    },
+    {
+      "id": "dty2U",
+      "type": "frame",
+      "name": "Card A — Healing Testimony",
+      "x": 16,
+      "y": 211,
+      "width": 179,
+      "height": 234,
+      "metadata": {
+        "parentId": "bi8Au"
+      },
+      "layout": "none",
+      "fillColor": "#071f14",
+      "cornerRadius": 16,
+      "stroke": {
+        "align": "inside",
+        "fill": "#10b981",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "uKwL2",
+      "type": "frame",
+      "name": "Card B — Prayer",
+      "x": 203,
+      "y": 211,
+      "width": 179,
+      "height": 168,
+      "metadata": {
+        "parentId": "bi8Au"
+      },
+      "fillColor": "#1a0d00",
+      "cornerRadius": 16,
+      "stroke": {
+        "align": "inside",
+        "fill": "#f59e0b",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "Wsfyn",
+      "type": "frame",
+      "name": "Card C — Lament",
+      "x": 203,
+      "y": 387,
+      "width": 179,
+      "height": 208,
+      "metadata": {
+        "parentId": "bi8Au"
+      },
+      "fillColor": "#111110",
+      "cornerRadius": 16,
+      "stroke": {
+        "align": "inside",
+        "fill": "#78716c",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "sWLkT",
+      "type": "frame",
+      "name": "Card D — Provision Testimony",
+      "x": 16,
+      "y": 453,
+      "width": 179,
+      "height": 188,
+      "metadata": {
+        "parentId": "bi8Au"
+      },
+      "fillColor": "#0e0920",
+      "cornerRadius": 16,
+      "stroke": {
+        "align": "inside",
+        "fill": "#8b5cf6",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "5jo2A",
+      "type": "frame",
+      "name": "Bottom Nav Container",
+      "x": 0,
+      "y": 762,
+      "width": 390,
+      "height": 82,
+      "metadata": {
+        "parentId": "bi8Au"
+      },
+      "padding": [
+        12,
+        21,
+        21,
+        21
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "p81ny",
+      "type": "rectangle",
+      "name": "Feed Top Sep",
+      "x": 0,
+      "y": 211,
+      "width": 390,
+      "height": 1,
+      "metadata": {
+        "parentId": "bi8Au"
+      },
+      "fillColor": "#1c1917"
+    },
+    {
+      "id": "Fwz7H",
+      "type": "frame",
+      "name": "Weep Btn Lament — Sample",
+      "x": 203,
+      "y": 590,
+      "height": 32,
+      "metadata": {
+        "parentId": "bi8Au"
+      },
+      "gap": 6,
+      "padding": [
+        6,
+        12
+      ],
+      "fillColor": "#1c1917",
+      "cornerRadius": 20,
+      "alignItems": "center"
+    },
+    {
+      "id": "fMNXw",
+      "type": "frame",
+      "name": "Onboarding 1 — Not a Like Button",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "3fu9X",
+      "type": "text",
+      "name": "Wordmark",
+      "x": 0,
+      "y": 80,
+      "metadata": {
+        "parentId": "fMNXw"
+      },
+      "content": "Testifyah",
+      "fontFamily": "Lora",
+      "fontSize": 22,
+      "fontWeight": "600",
+      "textColor": "#fafaf9",
+      "textAlign": "center"
+    },
+    {
+      "id": "gs0SB",
+      "type": "text",
+      "name": "Eyebrow",
+      "x": 0,
+      "y": 152,
+      "metadata": {
+        "parentId": "fMNXw"
+      },
+      "content": "BEFORE YOU BEGIN",
+      "fontFamily": "Inter",
+      "fontSize": 10,
+      "fontWeight": "700",
+      "textColor": "#57534e",
+      "textAlign": "center"
+    },
+    {
+      "id": "O7o1V",
+      "type": "text",
+      "name": "Headline",
+      "x": 36,
+      "y": 186,
+      "metadata": {
+        "parentId": "fMNXw"
+      },
+      "content": "This is not\na like button.",
+      "fontFamily": "Cormorant Garamond",
+      "fontSize": 38,
+      "fontWeight": "700",
+      "textColor": "#fafaf9",
+      "textAlign": "center"
+    },
+    {
+      "id": "bWM0T",
+      "type": "frame",
+      "name": "Weep Card",
+      "x": 24,
+      "y": 342,
+      "width": 106,
+      "height": 154,
+      "metadata": {
+        "parentId": "fMNXw"
+      },
+      "layout": "vertical",
+      "gap": 10,
+      "padding": [
+        20,
+        8,
+        16,
+        8
+      ],
+      "fillColor": "#111110",
+      "cornerRadius": 20,
+      "justifyContent": "center",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#78716c",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "mkz60",
+      "type": "frame",
+      "name": "Agree Card",
+      "x": 142,
+      "y": 342,
+      "width": 106,
+      "height": 154,
+      "metadata": {
+        "parentId": "fMNXw"
+      },
+      "layout": "vertical",
+      "gap": 10,
+      "padding": [
+        20,
+        8,
+        16,
+        8
+      ],
+      "fillColor": "#1a0d00",
+      "cornerRadius": 20,
+      "justifyContent": "center",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#f59e0b",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "h9VWi",
+      "type": "frame",
+      "name": "Rejoice Card",
+      "x": 260,
+      "y": 342,
+      "width": 106,
+      "height": 154,
+      "metadata": {
+        "parentId": "fMNXw"
+      },
+      "layout": "vertical",
+      "gap": 10,
+      "padding": [
+        20,
+        8,
+        16,
+        8
+      ],
+      "fillColor": "#071f14",
+      "cornerRadius": 20,
+      "justifyContent": "center",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#10b981",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "Al2oy",
+      "type": "rectangle",
+      "name": "Dot 1 Active",
+      "x": 176,
+      "y": 802,
+      "width": 20,
+      "height": 6,
+      "metadata": {
+        "parentId": "fMNXw"
+      },
+      "fillColor": "#B45309",
+      "cornerRadius": 3
+    },
+    {
+      "id": "Ot3Qj",
+      "type": "rectangle",
+      "name": "Dot 2",
+      "x": 202,
+      "y": 803,
+      "width": 6,
+      "height": 6,
+      "metadata": {
+        "parentId": "fMNXw"
+      },
+      "fillColor": "#292524",
+      "cornerRadius": 3
+    },
+    {
+      "id": "C27UP",
+      "type": "rectangle",
+      "name": "Dot 3",
+      "x": 214,
+      "y": 803,
+      "width": 6,
+      "height": 6,
+      "metadata": {
+        "parentId": "fMNXw"
+      },
+      "fillColor": "#292524",
+      "cornerRadius": 3
+    },
+    {
+      "id": "LB81j",
+      "type": "text",
+      "name": "Weep Scripture",
+      "x": 12,
+      "y": 506,
+      "width": 106,
+      "metadata": {
+        "parentId": "fMNXw"
+      },
+      "content": "Romans 12:15",
+      "fontFamily": "Lora",
+      "fontSize": 10,
+      "fontWeight": "normal",
+      "textColor": "#292524",
+      "textAlign": "center"
+    },
+    {
+      "id": "Iy8Z9",
+      "type": "text",
+      "name": "Agree Scripture",
+      "x": 130,
+      "y": 506,
+      "width": 106,
+      "metadata": {
+        "parentId": "fMNXw"
+      },
+      "content": "Matthew 18:19",
+      "fontFamily": "Lora",
+      "fontSize": 10,
+      "fontWeight": "normal",
+      "textColor": "#292524",
+      "textAlign": "center"
+    },
+    {
+      "id": "yCw23",
+      "type": "text",
+      "name": "Rejoice Scripture",
+      "x": 248,
+      "y": 506,
+      "width": 106,
+      "metadata": {
+        "parentId": "fMNXw"
+      },
+      "content": "Romans 12:15",
+      "fontFamily": "Lora",
+      "fontSize": 10,
+      "fontWeight": "normal",
+      "textColor": "#292524",
+      "textAlign": "center"
+    },
+    {
+      "id": "QeYEl",
+      "type": "frame",
+      "name": "Onboarding 2 — The Arc",
+      "x": 0,
+      "y": 1160,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "9tnz0",
+      "type": "text",
+      "x": 0,
+      "y": 80,
+      "metadata": {
+        "parentId": "QeYEl"
+      },
+      "content": "Testifyah",
+      "fontFamily": "Lora",
+      "fontSize": 22,
+      "fontWeight": "600",
+      "textColor": "#fafaf9",
+      "textAlign": "center"
+    },
+    {
+      "id": "gd8x1",
+      "type": "text",
+      "x": 0,
+      "y": 148,
+      "metadata": {
+        "parentId": "QeYEl"
+      },
+      "content": "THE SHAPE OF FAITH",
+      "fontFamily": "Inter",
+      "fontSize": 10,
+      "fontWeight": "700",
+      "textColor": "#57534e",
+      "textAlign": "center"
+    },
+    {
+      "id": "MBzeH",
+      "type": "frame",
+      "name": "Arc — Lament Card",
+      "x": 24,
+      "y": 196,
+      "width": 258,
+      "height": 90,
+      "metadata": {
+        "parentId": "QeYEl"
+      },
+      "layout": "vertical",
+      "gap": 6,
+      "padding": [
+        14,
+        16
+      ],
+      "fillColor": "#111110",
+      "cornerRadius": 16,
+      "stroke": {
+        "align": "inside",
+        "fill": "#78716c",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "6UTQ0",
+      "type": "frame",
+      "name": "Arc — Prayer Card",
+      "x": 52,
+      "y": 318,
+      "width": 258,
+      "height": 90,
+      "metadata": {
+        "parentId": "QeYEl"
+      },
+      "layout": "vertical",
+      "gap": 6,
+      "padding": [
+        14,
+        16
+      ],
+      "fillColor": "#1a0d00",
+      "cornerRadius": 16,
+      "stroke": {
+        "align": "inside",
+        "fill": "#f59e0b",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "f2HzI",
+      "type": "frame",
+      "name": "Arc — Testimony Card",
+      "x": 80,
+      "y": 440,
+      "width": 258,
+      "height": 104,
+      "metadata": {
+        "parentId": "QeYEl"
+      },
+      "layout": "vertical",
+      "gap": 6,
+      "padding": [
+        14,
+        16
+      ],
+      "fillColor": "#071f14",
+      "cornerRadius": 16,
+      "stroke": {
+        "align": "inside",
+        "fill": "#10b981",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "qol65",
+      "type": "text",
+      "name": "Arc Caption",
+      "x": 36,
+      "y": 584,
+      "metadata": {
+        "parentId": "QeYEl"
+      },
+      "content": "From Lament to Testimony.\nThis is the shape of faith.",
+      "fontFamily": "Lora",
+      "fontSize": 20,
+      "fontWeight": "600",
+      "textColor": "#fafaf9",
+      "textAlign": "center"
+    },
+    {
+      "id": "AXpNt",
+      "type": "rectangle",
+      "name": "Dot 1",
+      "x": 176,
+      "y": 802,
+      "width": 6,
+      "height": 6,
+      "metadata": {
+        "parentId": "QeYEl"
+      },
+      "fillColor": "#292524",
+      "cornerRadius": 3
+    },
+    {
+      "id": "FJ0Jt",
+      "type": "rectangle",
+      "name": "Dot 2 Active",
+      "x": 188,
+      "y": 800,
+      "width": 20,
+      "height": 6,
+      "metadata": {
+        "parentId": "QeYEl"
+      },
+      "fillColor": "#B45309",
+      "cornerRadius": 3
+    },
+    {
+      "id": "6KSPP",
+      "type": "rectangle",
+      "name": "Dot 3",
+      "x": 214,
+      "y": 802,
+      "width": 6,
+      "height": 6,
+      "metadata": {
+        "parentId": "QeYEl"
+      },
+      "fillColor": "#292524",
+      "cornerRadius": 3
+    },
+    {
+      "id": "t6rBG",
+      "type": "frame",
+      "name": "Onboarding 3 — Enter",
+      "x": 0,
+      "y": 2320,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "W9Ivd",
+      "type": "text",
+      "x": 0,
+      "y": 80,
+      "metadata": {
+        "parentId": "t6rBG"
+      },
+      "content": "Testifyah",
+      "fontFamily": "Lora",
+      "fontSize": 18,
+      "fontWeight": "500",
+      "textColor": "#44403c",
+      "textAlign": "center"
+    },
+    {
+      "id": "mAB13",
+      "type": "text",
+      "name": "Main Copy Line 1",
+      "x": 36,
+      "y": 220,
+      "metadata": {
+        "parentId": "t6rBG"
+      },
+      "content": "What you carry\nmatters here.",
+      "fontFamily": "Cormorant Garamond",
+      "fontSize": 34,
+      "fontWeight": "700",
+      "textColor": "#fafaf9",
+      "textAlign": "center"
+    },
+    {
+      "id": "wZn1U",
+      "type": "text",
+      "name": "Main Copy Line 2",
+      "x": 36,
+      "y": 360,
+      "metadata": {
+        "parentId": "t6rBG"
+      },
+      "content": "What God has done\ndeserves a witness.",
+      "fontFamily": "Lora",
+      "fontSize": 22,
+      "fontWeight": "normal",
+      "textColor": "#a8a29e",
+      "textAlign": "center"
+    },
+    {
+      "id": "X7xf4",
+      "type": "rectangle",
+      "name": "Amber Line",
+      "x": 157,
+      "y": 510,
+      "width": 76,
+      "height": 1,
+      "metadata": {
+        "parentId": "t6rBG"
+      },
+      "fillColor": "#B45309"
+    },
+    {
+      "id": "6LcAO",
+      "type": "frame",
+      "name": "Enter CTA",
+      "x": 24,
+      "y": 640,
+      "width": 342,
+      "height": 58,
+      "metadata": {
+        "parentId": "t6rBG"
+      },
+      "gap": 10,
+      "fillColor": "#B45309",
+      "cornerRadius": 29,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "1uDRZ",
+      "type": "text",
+      "name": "Sub Note",
+      "x": 0,
+      "y": 712,
+      "metadata": {
+        "parentId": "t6rBG"
+      },
+      "content": "Revelation 12:11",
+      "fontFamily": "Lora",
+      "fontSize": 11,
+      "fontWeight": "normal",
+      "textColor": "#44403c",
+      "textAlign": "center"
+    },
+    {
+      "id": "ZMcH0",
+      "type": "rectangle",
+      "name": "Dot 1",
+      "x": 176,
+      "y": 802,
+      "width": 6,
+      "height": 6,
+      "metadata": {
+        "parentId": "t6rBG"
+      },
+      "fillColor": "#292524",
+      "cornerRadius": 3
+    },
+    {
+      "id": "kVP2G",
+      "type": "rectangle",
+      "name": "Dot 2",
+      "x": 188,
+      "y": 802,
+      "width": 6,
+      "height": 6,
+      "metadata": {
+        "parentId": "t6rBG"
+      },
+      "fillColor": "#292524",
+      "cornerRadius": 3
+    },
+    {
+      "id": "Fs9WP",
+      "type": "rectangle",
+      "name": "Dot 3 Active",
+      "x": 200,
+      "y": 800,
+      "width": 20,
+      "height": 6,
+      "metadata": {
+        "parentId": "t6rBG"
+      },
+      "fillColor": "#B45309",
+      "cornerRadius": 3
+    },
+    {
+      "id": "NJHq4",
+      "type": "frame",
+      "name": "Feed — Witness Wall",
+      "x": 470,
+      "y": 6960,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "vVpN6",
+      "type": "frame",
+      "name": "newSide",
+      "width": 280,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "NJHq4"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        24
+      ],
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_between",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "right": 1
+        }
+      }
+    },
+    {
+      "id": "TGXAu",
+      "type": "frame",
+      "name": "Main Content",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "NJHq4"
+      },
+      "layout": "vertical"
+    },
+    {
+      "id": "zdKTv",
+      "type": "frame",
+      "name": "Feed — Morning Glory (Light Mode)",
+      "x": 470,
+      "y": 8120,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#FDFCF9"
+    },
+    {
+      "id": "5HrlG",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 280,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "zdKTv"
+      },
+      "layout": "vertical",
+      "padding": [
+        0,
+        0,
+        16,
+        0
+      ],
+      "fillColor": "#FFFFFF",
+      "clip": true,
+      "stroke": {
+        "align": "inside",
+        "fill": "#0000000F",
+        "thickness": {
+          "right": 1
+        }
+      }
+    },
+    {
+      "id": "hVIHx",
+      "type": "frame",
+      "name": "Main Content",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "zdKTv"
+      },
+      "layout": "vertical"
+    },
+    {
+      "id": "baHla",
+      "type": "frame",
+      "name": "Compose — Bear Witness Sheet",
+      "x": 0,
+      "y": 9280,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "IKzoC",
+      "type": "rectangle",
+      "name": "Overlay",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 844,
+      "metadata": {
+        "parentId": "baHla"
+      },
+      "fillColor": "#000000",
+      "opacity": 0.6
+    },
+    {
+      "id": "dErDe",
+      "type": "frame",
+      "name": "Sheet Panel",
+      "x": 0,
+      "y": 420,
+      "width": 390,
+      "height": 424,
+      "metadata": {
+        "parentId": "baHla"
+      },
+      "layout": "none",
+      "fillColor": "#111110",
+      "cornerRadius": 28
+    },
+    {
+      "id": "cKnnd",
+      "type": "frame",
+      "name": "Compose — Write Screen",
+      "x": 0,
+      "y": 10440,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "v8Gqa",
+      "type": "frame",
+      "name": "Status Bar",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 62,
+      "metadata": {
+        "parentId": "cKnnd"
+      },
+      "padding": [
+        0,
+        20,
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "71UG4",
+      "type": "frame",
+      "name": "Top Bar",
+      "x": 0,
+      "y": 62,
+      "width": 390,
+      "height": 52,
+      "metadata": {
+        "parentId": "cKnnd"
+      },
+      "padding": [
+        0,
+        20,
+        0,
+        16
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "2UdPJ",
+      "type": "text",
+      "name": "Title Placeholder",
+      "x": 24,
+      "y": 134,
+      "metadata": {
+        "parentId": "cKnnd"
+      },
+      "content": "Give your testimony a title...",
+      "fontFamily": "Cormorant Garamond",
+      "fontSize": 24,
+      "fontWeight": "600",
+      "textColor": "#a8a29e"
+    },
+    {
+      "id": "azZPz",
+      "type": "text",
+      "name": "Body Prompt 1",
+      "x": 24,
+      "y": 182,
+      "metadata": {
+        "parentId": "cKnnd"
+      },
+      "content": "What was your situation?",
+      "fontFamily": "Lora",
+      "fontSize": 16,
+      "fontWeight": "normal",
+      "textColor": "#57534e"
+    },
+    {
+      "id": "w6b6Z",
+      "type": "text",
+      "name": "Body Prompt 2",
+      "x": 24,
+      "y": 212,
+      "metadata": {
+        "parentId": "cKnnd"
+      },
+      "content": "How did God move?",
+      "fontFamily": "Lora",
+      "fontSize": 16,
+      "fontWeight": "normal",
+      "textColor": "#57534e"
+    },
+    {
+      "id": "KBB4p",
+      "type": "text",
+      "name": "Body Prompt 3",
+      "x": 24,
+      "y": 242,
+      "metadata": {
+        "parentId": "cKnnd"
+      },
+      "content": "What scripture speaks to this?",
+      "fontFamily": "Lora",
+      "fontSize": 16,
+      "fontWeight": "normal",
+      "textColor": "#57534e"
+    },
+    {
+      "id": "xQVBM",
+      "type": "rectangle",
+      "name": "Text Cursor",
+      "x": 24,
+      "y": 182,
+      "width": 2,
+      "height": 22,
+      "metadata": {
+        "parentId": "cKnnd"
+      },
+      "fillColor": "#10b981"
+    },
+    {
+      "id": "GTOT3",
+      "type": "rectangle",
+      "name": "Toolbar Divider",
+      "x": 0,
+      "y": 746,
+      "width": 390,
+      "height": 1,
+      "metadata": {
+        "parentId": "cKnnd"
+      },
+      "fillColor": "#1c1917"
+    },
+    {
+      "id": "ObJHt",
+      "type": "frame",
+      "name": "Compose Toolbar",
+      "x": 0,
+      "y": 747,
+      "width": 390,
+      "height": 56,
+      "metadata": {
+        "parentId": "cKnnd"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "Gu3Hi",
+      "type": "rectangle",
+      "name": "Safe Area",
+      "x": 0,
+      "y": 803,
+      "width": 390,
+      "height": 41,
+      "metadata": {
+        "parentId": "cKnnd"
+      },
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "ebYlJ",
+      "type": "frame",
+      "name": "Ghost Lament Toggle",
+      "x": 24,
+      "y": 280,
+      "width": 342,
+      "metadata": {
+        "parentId": "cKnnd"
+      },
+      "gap": 12,
+      "padding": [
+        12,
+        16
+      ],
+      "fillColor": "#111110",
+      "cornerRadius": 10,
+      "alignItems": "center"
+    },
+    {
+      "id": "C8DOG",
+      "type": "frame",
+      "name": "Anchor Verse Field",
+      "x": 24,
+      "y": 340,
+      "width": 342,
+      "metadata": {
+        "parentId": "cKnnd"
+      },
+      "gap": 12,
+      "padding": [
+        12,
+        16
+      ],
+      "fillColor": "#111110",
+      "cornerRadius": 10,
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#292524",
+        "thickness": 1
+      }
+    },
+    {
+      "id": "FO98A",
+      "type": "frame",
+      "name": "Onboarding 1 — Not a Like Button (Desktop 1440)",
+      "x": 470,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "Spoqa",
+      "type": "frame",
+      "name": "Left Panel",
+      "width": 720,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "FO98A"
+      },
+      "layout": "vertical",
+      "padding": [
+        0,
+        80
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center"
+    },
+    {
+      "id": "UroOl",
+      "type": "frame",
+      "name": "Right Panel",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "FO98A"
+      },
+      "layout": "vertical",
+      "gap": 24,
+      "fillColor": "#111110",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "k6hiU",
+      "type": "frame",
+      "name": "Onboarding 2 — The Arc (Desktop 1440)",
+      "x": 470,
+      "y": 1160,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "vGrMa",
+      "type": "frame",
+      "name": "Left Panel",
+      "width": 720,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "k6hiU"
+      },
+      "layout": "vertical",
+      "padding": [
+        0,
+        80
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center"
+    },
+    {
+      "id": "iBx5t",
+      "type": "frame",
+      "name": "Right Panel",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "k6hiU"
+      },
+      "layout": "vertical",
+      "gap": 16,
+      "padding": [
+        0,
+        40
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "nVtfR",
+      "type": "frame",
+      "name": "Onboarding 3 — Enter (Desktop 1440)",
+      "x": 470,
+      "y": 2320,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "rruUp",
+      "type": "frame",
+      "name": "Left Panel",
+      "width": 720,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "nVtfR"
+      },
+      "layout": "vertical",
+      "padding": [
+        0,
+        80
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center"
+    },
+    {
+      "id": "jUPUA",
+      "type": "frame",
+      "name": "Right Panel",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "nVtfR"
+      },
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        0,
+        48
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "7PsGs",
+      "type": "frame",
+      "name": "Compose — Bear Witness Modal (Desktop 1440)",
+      "x": 470,
+      "y": 9280,
+      "width": 1440,
+      "height": 900,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "N6HIZ",
+      "type": "frame",
+      "name": "Feed Behind (dimmed)",
+      "x": 0,
+      "y": 0,
+      "width": 860,
+      "height": 900,
+      "metadata": {
+        "parentId": "7PsGs"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "pMCbH",
+      "type": "frame",
+      "name": "Bear Witness Modal",
+      "x": 150,
+      "y": 110,
+      "width": 560,
+      "height": 680,
+      "metadata": {
+        "parentId": "7PsGs"
+      },
+      "layout": "vertical",
+      "fillColor": "#161412",
+      "cornerRadius": 20,
+      "stroke": {
+        "align": "inside",
+        "fill": "#292524",
+        "thickness": 1
+      }
+    },
+    {
+      "id": "5iXFh",
+      "type": "frame",
+      "name": "Sidebar",
+      "x": 860,
+      "y": 0,
+      "width": 280,
+      "height": 900,
+      "metadata": {
+        "parentId": "7PsGs"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        24
+      ],
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_between",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "right": 1
+        }
+      }
+    },
+    {
+      "id": "N24vf",
+      "type": "frame",
+      "name": "Modal Area",
+      "x": 1160,
+      "y": 0,
+      "width": 280,
+      "height": 900,
+      "metadata": {
+        "parentId": "7PsGs"
+      },
+      "layout": "vertical",
+      "fillColor": "#00000000",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "0LuHI",
+      "type": "frame",
+      "name": "Compose — Write Screen (Desktop 1440)",
+      "x": 470,
+      "y": 10440,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "B3Jli",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 280,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "0LuHI"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        24
+      ],
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_between",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "right": 1
+        }
+      }
+    },
+    {
+      "id": "Om0ef",
+      "type": "frame",
+      "name": "Main Content",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "0LuHI"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "ppK7q",
+      "type": "frame",
+      "name": "Feed — Witness Wall (1920×1080)",
+      "x": 2070,
+      "y": 6960,
+      "width": 1920,
+      "height": 1080,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "fPSXA",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 320,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "ppK7q"
+      },
+      "layout": "vertical",
+      "padding": [
+        40,
+        28
+      ],
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_between",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "right": 1
+        }
+      }
+    },
+    {
+      "id": "wQWXH",
+      "type": "frame",
+      "name": "Main Content",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "ppK7q"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "hgxRh",
+      "type": "frame",
+      "name": "Onboarding 1 — Not a Like Button (1920×1080)",
+      "x": 2070,
+      "y": 0,
+      "width": 1920,
+      "height": 1080,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "RjqPv",
+      "type": "frame",
+      "name": "Left Panel",
+      "width": 900,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "hgxRh"
+      },
+      "layout": "vertical",
+      "padding": [
+        0,
+        100
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center"
+    },
+    {
+      "id": "34Hzl",
+      "type": "frame",
+      "name": "Right Panel",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "hgxRh"
+      },
+      "layout": "vertical",
+      "gap": 32,
+      "fillColor": "#111110",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "FH7f0",
+      "type": "frame",
+      "name": "Onboarding 2 — The Arc (1920×1080)",
+      "x": 2070,
+      "y": 1160,
+      "width": 1920,
+      "height": 1080,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "WJGjZ",
+      "type": "frame",
+      "name": "Left Panel",
+      "width": 900,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "FH7f0"
+      },
+      "layout": "vertical",
+      "padding": [
+        0,
+        100
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center"
+    },
+    {
+      "id": "I8W4V",
+      "type": "frame",
+      "name": "Right Panel",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "FH7f0"
+      },
+      "layout": "vertical",
+      "gap": 20,
+      "padding": [
+        0,
+        60
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "y9NrN",
+      "type": "frame",
+      "name": "Onboarding 3 — Enter (1920×1080)",
+      "x": 2070,
+      "y": 2320,
+      "width": 1920,
+      "height": 1080,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "X1Hku",
+      "type": "frame",
+      "name": "Left Panel",
+      "width": 900,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "y9NrN"
+      },
+      "layout": "vertical",
+      "padding": [
+        0,
+        100
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center"
+    },
+    {
+      "id": "f42Ee",
+      "type": "frame",
+      "name": "Right Panel",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "y9NrN"
+      },
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        0,
+        60
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "PUFt4",
+      "type": "frame",
+      "name": "Compose — Write Screen (1920×1080)",
+      "x": 2070,
+      "y": 10440,
+      "width": 1920,
+      "height": 1080,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "nPlvD",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 320,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "PUFt4"
+      },
+      "layout": "vertical",
+      "padding": [
+        40,
+        28
+      ],
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_between",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "right": 1
+        }
+      }
+    },
+    {
+      "id": "gOFNS",
+      "type": "frame",
+      "name": "Main Content",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "PUFt4"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "XVlgW",
+      "type": "frame",
+      "name": "Auth — Login",
+      "x": 0,
+      "y": 3480,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "sdKDt",
+      "type": "frame",
+      "name": "Status Bar",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 62,
+      "metadata": {
+        "parentId": "XVlgW"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "evBIQ",
+      "type": "text",
+      "name": "Wordmark",
+      "x": 0,
+      "y": 120,
+      "metadata": {
+        "parentId": "XVlgW"
+      },
+      "content": "Testifyah",
+      "fontFamily": "Lora",
+      "fontSize": 32,
+      "fontWeight": "700",
+      "textColor": "#fafaf9",
+      "textAlign": "center"
+    },
+    {
+      "id": "LIJel",
+      "type": "text",
+      "name": "Tagline",
+      "x": 0,
+      "y": 164,
+      "metadata": {
+        "parentId": "XVlgW"
+      },
+      "content": "Your story. His glory.",
+      "fontFamily": "Lora",
+      "fontSize": 14,
+      "fontWeight": "normal",
+      "textColor": "#57534e",
+      "textAlign": "center"
+    },
+    {
+      "id": "KC1AT",
+      "type": "rectangle",
+      "name": "Amber Divider",
+      "x": 157,
+      "y": 196,
+      "width": 76,
+      "height": 2,
+      "metadata": {
+        "parentId": "XVlgW"
+      },
+      "fillColor": "#B45309",
+      "cornerRadius": 1
+    },
+    {
+      "id": "Uyhic",
+      "type": "text",
+      "name": "Headline",
+      "x": 24,
+      "y": 228,
+      "metadata": {
+        "parentId": "XVlgW"
+      },
+      "content": "Welcome back",
+      "fontFamily": "Lora",
+      "fontSize": 24,
+      "fontWeight": "600",
+      "textColor": "#fafaf9"
+    },
+    {
+      "id": "DFBru",
+      "type": "frame",
+      "name": "Email Field",
+      "x": 24,
+      "y": 276,
+      "width": 342,
+      "height": 52,
+      "metadata": {
+        "parentId": "XVlgW"
+      },
+      "gap": 10,
+      "padding": [
+        0,
+        16
+      ],
+      "fillColor": "#111110",
+      "cornerRadius": 10,
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#292524",
+        "thickness": 1
+      }
+    },
+    {
+      "id": "9b9g7",
+      "type": "frame",
+      "name": "Password Field",
+      "x": 24,
+      "y": 344,
+      "width": 342,
+      "height": 52,
+      "metadata": {
+        "parentId": "XVlgW"
+      },
+      "gap": 10,
+      "padding": [
+        0,
+        16
+      ],
+      "fillColor": "#111110",
+      "cornerRadius": 10,
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#292524",
+        "thickness": 1
+      }
+    },
+    {
+      "id": "b4zRx",
+      "type": "text",
+      "name": "Forgot Password",
+      "x": 24,
+      "y": 412,
+      "metadata": {
+        "parentId": "XVlgW"
+      },
+      "content": "Forgot password?",
+      "fontFamily": "Lora",
+      "fontSize": 13,
+      "fontWeight": "normal",
+      "textColor": "#78716c",
+      "textAlign": "right"
+    },
+    {
+      "id": "s8bkM",
+      "type": "frame",
+      "name": "Sign In CTA",
+      "x": 24,
+      "y": 448,
+      "width": 342,
+      "height": 54,
+      "metadata": {
+        "parentId": "XVlgW"
+      },
+      "fillColor": "#B45309",
+      "cornerRadius": 27,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "OvyLw",
+      "type": "text",
+      "name": "Separator Copy",
+      "x": 0,
+      "y": 522,
+      "metadata": {
+        "parentId": "XVlgW"
+      },
+      "content": "— No Google. No Apple. Just you and your story. —",
+      "fontFamily": "Lora",
+      "fontSize": 11,
+      "fontWeight": "normal",
+      "textColor": "#292524",
+      "textAlign": "center"
+    },
+    {
+      "id": "yVVuA",
+      "type": "text",
+      "name": "New Here",
+      "x": 0,
+      "y": 552,
+      "metadata": {
+        "parentId": "XVlgW"
+      },
+      "content": "New here? Create your account →",
+      "fontFamily": "Lora",
+      "fontSize": 14,
+      "fontWeight": "normal",
+      "textColor": "#57534e",
+      "textAlign": "center"
+    },
+    {
+      "id": "gdEZB",
+      "type": "text",
+      "name": "Footer",
+      "x": 0,
+      "y": 813,
+      "metadata": {
+        "parentId": "XVlgW"
+      },
+      "content": "from Devotion Laboratory",
+      "fontFamily": "Lora",
+      "fontSize": 11,
+      "fontWeight": "normal",
+      "textColor": "#292524",
+      "textAlign": "center"
+    },
+    {
+      "id": "SjupS",
+      "type": "frame",
+      "name": "Auth — Signup",
+      "x": 0,
+      "y": 4640,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "jRAvk",
+      "type": "frame",
+      "name": "Status Bar",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 62,
+      "metadata": {
+        "parentId": "SjupS"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "mbR9O",
+      "type": "text",
+      "name": "Wordmark",
+      "x": 0,
+      "y": 80,
+      "metadata": {
+        "parentId": "SjupS"
+      },
+      "content": "Testifyah",
+      "fontFamily": "Lora",
+      "fontSize": 32,
+      "fontWeight": "700",
+      "textColor": "#fafaf9",
+      "textAlign": "center"
+    },
+    {
+      "id": "MdAVv",
+      "type": "text",
+      "name": "Tagline",
+      "x": 0,
+      "y": 124,
+      "metadata": {
+        "parentId": "SjupS"
+      },
+      "content": "Your story. His glory.",
+      "fontFamily": "Lora",
+      "fontSize": 14,
+      "fontWeight": "normal",
+      "textColor": "#57534e",
+      "textAlign": "center"
+    },
+    {
+      "id": "mH0tP",
+      "type": "rectangle",
+      "name": "Amber Divider",
+      "x": 157,
+      "y": 152,
+      "width": 76,
+      "height": 2,
+      "metadata": {
+        "parentId": "SjupS"
+      },
+      "fillColor": "#B45309",
+      "cornerRadius": 1
+    },
+    {
+      "id": "qgLeN",
+      "type": "text",
+      "name": "Headline",
+      "x": 24,
+      "y": 176,
+      "metadata": {
+        "parentId": "SjupS"
+      },
+      "content": "Create your account",
+      "fontFamily": "Lora",
+      "fontSize": 24,
+      "fontWeight": "600",
+      "textColor": "#fafaf9"
+    },
+    {
+      "id": "VyzMW",
+      "type": "text",
+      "name": "Subhead",
+      "x": 24,
+      "y": 212,
+      "metadata": {
+        "parentId": "SjupS"
+      },
+      "content": "A sacred record begins with your first step.",
+      "fontFamily": "Lora",
+      "fontSize": 14,
+      "fontWeight": "normal",
+      "textColor": "#57534e"
+    },
+    {
+      "id": "Oc7oF",
+      "type": "frame",
+      "name": "Email Field",
+      "x": 24,
+      "y": 248,
+      "width": 342,
+      "height": 52,
+      "metadata": {
+        "parentId": "SjupS"
+      },
+      "gap": 10,
+      "padding": [
+        0,
+        16
+      ],
+      "fillColor": "#111110",
+      "cornerRadius": 10,
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#292524",
+        "thickness": 1
+      }
+    },
+    {
+      "id": "reQab",
+      "type": "frame",
+      "name": "Password Field",
+      "x": 24,
+      "y": 316,
+      "width": 342,
+      "height": 52,
+      "metadata": {
+        "parentId": "SjupS"
+      },
+      "gap": 10,
+      "padding": [
+        0,
+        16
+      ],
+      "fillColor": "#111110",
+      "cornerRadius": 10,
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#292524",
+        "thickness": 1
+      }
+    },
+    {
+      "id": "GDqNu",
+      "type": "frame",
+      "name": "Password Strength Bar",
+      "x": 24,
+      "y": 376,
+      "width": 342,
+      "height": 4,
+      "metadata": {
+        "parentId": "SjupS"
+      },
+      "gap": 4,
+      "fillColor": "#00000000"
+    },
+    {
+      "id": "oyoOl",
+      "type": "text",
+      "name": "Privacy Pledge",
+      "x": 24,
+      "y": 396,
+      "metadata": {
+        "parentId": "SjupS"
+      },
+      "content": "Your testimonies will never be sold, trained on, or exploited.\nYour privacy is a covenant, not a policy.",
+      "fontFamily": "Lora",
+      "fontSize": 11,
+      "fontWeight": "normal",
+      "textColor": "#44403C",
+      "textAlign": "center"
+    },
+    {
+      "id": "Ys2KE",
+      "type": "frame",
+      "name": "Disclaimer Checkbox",
+      "x": 24,
+      "y": 444,
+      "width": 342,
+      "height": 36,
+      "metadata": {
+        "parentId": "SjupS"
+      },
+      "gap": 12,
+      "fillColor": "#00000000",
+      "alignItems": "center"
+    },
+    {
+      "id": "2DBM4",
+      "type": "frame",
+      "name": "Create Account CTA",
+      "x": 24,
+      "y": 498,
+      "width": 342,
+      "height": 54,
+      "metadata": {
+        "parentId": "SjupS"
+      },
+      "fillColor": "#B45309",
+      "cornerRadius": 27,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "JCrNt",
+      "type": "text",
+      "name": "Sign In Link",
+      "x": 0,
+      "y": 572,
+      "metadata": {
+        "parentId": "SjupS"
+      },
+      "content": "Already have an account? Sign in →",
+      "fontFamily": "Lora",
+      "fontSize": 14,
+      "fontWeight": "normal",
+      "textColor": "#57534e",
+      "textAlign": "center"
+    },
+    {
+      "id": "LRQYE",
+      "type": "text",
+      "name": "Footer",
+      "x": 0,
+      "y": 813,
+      "metadata": {
+        "parentId": "SjupS"
+      },
+      "content": "from Devotion Laboratory",
+      "fontFamily": "Lora",
+      "fontSize": 11,
+      "fontWeight": "normal",
+      "textColor": "#292524",
+      "textAlign": "center"
+    },
+    {
+      "id": "tk4vl",
+      "type": "frame",
+      "name": "Auth — OTP Verification",
+      "x": 0,
+      "y": 5800,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "ADHBJ",
+      "type": "frame",
+      "name": "Status Bar",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 62,
+      "metadata": {
+        "parentId": "tk4vl"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "A3Qnu",
+      "type": "frame",
+      "name": "Back Arrow",
+      "x": 16,
+      "y": 72,
+      "width": 40,
+      "height": 40,
+      "metadata": {
+        "parentId": "tk4vl"
+      },
+      "fillColor": "#00000000",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "nRYl4",
+      "type": "frame",
+      "name": "Envelope Circle",
+      "x": 155,
+      "y": 148,
+      "width": 80,
+      "height": 80,
+      "metadata": {
+        "parentId": "tk4vl"
+      },
+      "fillColor": "#2d1a00",
+      "cornerRadius": 40,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "HBlxv",
+      "type": "text",
+      "name": "Headline",
+      "x": 0,
+      "y": 252,
+      "metadata": {
+        "parentId": "tk4vl"
+      },
+      "content": "Check your inbox",
+      "fontFamily": "Lora",
+      "fontSize": 28,
+      "fontWeight": "700",
+      "textColor": "#fafaf9",
+      "textAlign": "center"
+    },
+    {
+      "id": "mMji7",
+      "type": "text",
+      "name": "Sub Copy",
+      "x": 0,
+      "y": 296,
+      "metadata": {
+        "parentId": "tk4vl"
+      },
+      "content": "We sent a 6-digit code to",
+      "fontFamily": "Lora",
+      "fontSize": 14,
+      "fontWeight": "normal",
+      "textColor": "#78716c",
+      "textAlign": "center"
+    },
+    {
+      "id": "bColQ",
+      "type": "text",
+      "name": "Email Value",
+      "x": 0,
+      "y": 318,
+      "metadata": {
+        "parentId": "tk4vl"
+      },
+      "content": "witness@example.com",
+      "fontFamily": "Lora",
+      "fontSize": 14,
+      "fontWeight": "normal",
+      "textColor": "#B45309",
+      "textAlign": "center"
+    },
+    {
+      "id": "GnwVn",
+      "type": "frame",
+      "name": "OTP Input Row",
+      "x": 24,
+      "y": 368,
+      "width": 342,
+      "height": 58,
+      "metadata": {
+        "parentId": "tk4vl"
+      },
+      "gap": 8,
+      "fillColor": "#00000000"
+    },
+    {
+      "id": "jSKHt",
+      "type": "text",
+      "name": "Resend",
+      "x": 0,
+      "y": 448,
+      "metadata": {
+        "parentId": "tk4vl"
+      },
+      "content": "Resend in 48s",
+      "fontFamily": "Lora",
+      "fontSize": 13,
+      "fontWeight": "normal",
+      "textColor": "#44403C",
+      "textAlign": "center"
+    },
+    {
+      "id": "y0ddF",
+      "type": "frame",
+      "name": "Confirm CTA (disabled)",
+      "x": 24,
+      "y": 488,
+      "width": 342,
+      "height": 54,
+      "metadata": {
+        "parentId": "tk4vl"
+      },
+      "fillColor": "#1c1917",
+      "cornerRadius": 27,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "2a8No",
+      "type": "text",
+      "name": "Expiry Note",
+      "x": 0,
+      "y": 562,
+      "metadata": {
+        "parentId": "tk4vl"
+      },
+      "content": "This code expires in 10 minutes",
+      "fontFamily": "Lora",
+      "fontSize": 12,
+      "fontWeight": "normal",
+      "textColor": "#292524",
+      "textAlign": "center"
+    },
+    {
+      "id": "ek7wV",
+      "type": "frame",
+      "name": "Prayer — Prayer Board",
+      "x": 0,
+      "y": 11600,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "QLeqv",
+      "type": "frame",
+      "name": "Status Bar",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 62,
+      "metadata": {
+        "parentId": "ek7wV"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "rGsLP",
+      "type": "frame",
+      "name": "Header",
+      "x": 0,
+      "y": 62,
+      "width": 390,
+      "height": 56,
+      "metadata": {
+        "parentId": "ek7wV"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "gGZRX",
+      "type": "rectangle",
+      "name": "Purple Header Accent",
+      "x": 0,
+      "y": 62,
+      "width": 3,
+      "height": 56,
+      "metadata": {
+        "parentId": "ek7wV"
+      },
+      "fillColor": "#7E22CE"
+    },
+    {
+      "id": "INq6R",
+      "type": "rectangle",
+      "name": "Divider",
+      "x": 0,
+      "y": 118,
+      "width": 390,
+      "height": 1,
+      "metadata": {
+        "parentId": "ek7wV"
+      },
+      "fillColor": "#1c1917"
+    },
+    {
+      "id": "xmVgx",
+      "type": "frame",
+      "name": "Watchman's Wall Banner",
+      "x": 0,
+      "y": 119,
+      "width": 390,
+      "height": 72,
+      "metadata": {
+        "parentId": "ek7wV"
+      },
+      "gap": 12,
+      "padding": [
+        0,
+        16
+      ],
+      "fillColor": "#1a0020",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#7E22CE",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "X6PUc",
+      "type": "frame",
+      "name": "Filter Tabs",
+      "x": 0,
+      "y": 191,
+      "width": 390,
+      "height": 44,
+      "metadata": {
+        "parentId": "ek7wV"
+      },
+      "gap": 24,
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "alignItems": "end"
+    },
+    {
+      "id": "gUJQX",
+      "type": "rectangle",
+      "name": "Filter Divider",
+      "x": 0,
+      "y": 235,
+      "width": 390,
+      "height": 1,
+      "metadata": {
+        "parentId": "ek7wV"
+      },
+      "fillColor": "#1c1917"
+    },
+    {
+      "id": "8HjsU",
+      "type": "frame",
+      "name": "Prayer Card — Active",
+      "x": 16,
+      "y": 251,
+      "width": 358,
+      "height": 110,
+      "metadata": {
+        "parentId": "ek7wV"
+      },
+      "layout": "vertical",
+      "gap": 6,
+      "padding": [
+        14,
+        16
+      ],
+      "fillColor": "#1a0d00",
+      "cornerRadius": 12,
+      "stroke": {
+        "align": "inside",
+        "fill": "#f59e0b",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "7XLgl",
+      "type": "frame",
+      "name": "Prayer Card — Praying",
+      "x": 16,
+      "y": 377,
+      "width": 358,
+      "height": 110,
+      "metadata": {
+        "parentId": "ek7wV"
+      },
+      "layout": "vertical",
+      "gap": 6,
+      "padding": [
+        14,
+        16
+      ],
+      "fillColor": "#0e0920",
+      "cornerRadius": 12,
+      "stroke": {
+        "align": "inside",
+        "fill": "#7E22CE",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "BYCr2",
+      "type": "frame",
+      "name": "Prayer Card — Answered",
+      "x": 16,
+      "y": 503,
+      "width": 358,
+      "height": 110,
+      "metadata": {
+        "parentId": "ek7wV"
+      },
+      "layout": "vertical",
+      "gap": 6,
+      "padding": [
+        14,
+        16
+      ],
+      "fillColor": "#071f14",
+      "cornerRadius": 12,
+      "stroke": {
+        "align": "inside",
+        "fill": "#10b981",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "gcXSw",
+      "type": "frame",
+      "name": "Bottom Nav",
+      "x": 0,
+      "y": 762,
+      "width": 390,
+      "height": 82,
+      "metadata": {
+        "parentId": "ek7wV"
+      },
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_around",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "top": 1
+        }
+      }
+    },
+    {
+      "id": "VgthA",
+      "type": "frame",
+      "name": "Post a Prayer CTA",
+      "x": 16,
+      "y": 630,
+      "width": 358,
+      "height": 52,
+      "metadata": {
+        "parentId": "ek7wV"
+      },
+      "fillColor": "#7E22CE",
+      "cornerRadius": 27,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "LerYR",
+      "type": "frame",
+      "name": "Prayer — Upper Room",
+      "x": 0,
+      "y": 12760,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "afh9t",
+      "type": "frame",
+      "name": "Status Bar",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 62,
+      "metadata": {
+        "parentId": "LerYR"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "tWFK7",
+      "type": "frame",
+      "name": "Close Btn",
+      "x": 334,
+      "y": 72,
+      "width": 40,
+      "height": 40,
+      "metadata": {
+        "parentId": "LerYR"
+      },
+      "fillColor": "#00000000",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "Zvn89",
+      "type": "text",
+      "name": "Petitioner",
+      "x": 0,
+      "y": 124,
+      "metadata": {
+        "parentId": "LerYR"
+      },
+      "content": "Standing with A Fellow from Nigeria",
+      "fontFamily": "Lora",
+      "fontSize": 13,
+      "fontWeight": "normal",
+      "textColor": "#78716c",
+      "textAlign": "center"
+    },
+    {
+      "id": "2qLU1",
+      "type": "frame",
+      "name": "Prayer Card",
+      "x": 24,
+      "y": 152,
+      "width": 342,
+      "height": 120,
+      "metadata": {
+        "parentId": "LerYR"
+      },
+      "layout": "vertical",
+      "padding": [
+        16,
+        20
+      ],
+      "fillColor": "#111110",
+      "cornerRadius": 16,
+      "justifyContent": "center"
+    },
+    {
+      "id": "ah7MW",
+      "type": "frame",
+      "name": "Timer Ring Outer (pulse)",
+      "x": 65,
+      "y": 292,
+      "width": 260,
+      "height": 260,
+      "metadata": {
+        "parentId": "LerYR"
+      },
+      "fillColor": "#00000000",
+      "cornerRadius": 130,
+      "stroke": {
+        "align": "inside",
+        "fill": "#7E22CE",
+        "thickness": 1
+      }
+    },
+    {
+      "id": "42opI",
+      "type": "frame",
+      "name": "Timer Ring Mid (pulse)",
+      "x": 75,
+      "y": 302,
+      "width": 240,
+      "height": 240,
+      "metadata": {
+        "parentId": "LerYR"
+      },
+      "fillColor": "#00000000",
+      "cornerRadius": 120,
+      "stroke": {
+        "align": "inside",
+        "fill": "#7E22CE",
+        "thickness": 1
+      }
+    },
+    {
+      "id": "eSKS1",
+      "type": "frame",
+      "name": "Timer Ring Track",
+      "x": 85,
+      "y": 312,
+      "width": 220,
+      "height": 220,
+      "metadata": {
+        "parentId": "LerYR"
+      },
+      "fillColor": "#111110",
+      "cornerRadius": 110,
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": 8
+      }
+    },
+    {
+      "id": "ulKGP",
+      "type": "frame",
+      "name": "Timer Ring Fill (arc)",
+      "x": 85,
+      "y": 312,
+      "width": 220,
+      "height": 220,
+      "metadata": {
+        "parentId": "LerYR"
+      },
+      "fillColor": "#00000000",
+      "cornerRadius": 110,
+      "stroke": {
+        "align": "inside",
+        "fill": "#7E22CE",
+        "thickness": 8
+      }
+    },
+    {
+      "id": "Ov0ed",
+      "type": "frame",
+      "name": "Timer Center",
+      "x": 85,
+      "y": 312,
+      "width": 220,
+      "height": 220,
+      "metadata": {
+        "parentId": "LerYR"
+      },
+      "layout": "vertical",
+      "gap": 4,
+      "fillColor": "#00000000",
+      "cornerRadius": 110,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "vMh9x",
+      "type": "text",
+      "name": "Progress Label",
+      "x": 0,
+      "y": 548,
+      "metadata": {
+        "parentId": "LerYR"
+      },
+      "content": "47 of 120 seconds",
+      "fontFamily": "Lora",
+      "fontSize": 13,
+      "fontWeight": "normal",
+      "textColor": "#57534e",
+      "textAlign": "center"
+    },
+    {
+      "id": "uVgOH",
+      "type": "frame",
+      "name": "I Have Prayed CTA (disabled)",
+      "x": 24,
+      "y": 592,
+      "width": 342,
+      "height": 54,
+      "metadata": {
+        "parentId": "LerYR"
+      },
+      "fillColor": "#1a0a2e",
+      "cornerRadius": 27,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "whvSr",
+      "type": "text",
+      "name": "End Early",
+      "x": 0,
+      "y": 664,
+      "metadata": {
+        "parentId": "LerYR"
+      },
+      "content": "End early",
+      "fontFamily": "Lora",
+      "fontSize": 13,
+      "fontWeight": "normal",
+      "textColor": "#44403C",
+      "textAlign": "center"
+    },
+    {
+      "id": "mQRsk",
+      "type": "frame",
+      "name": "Selah Update Banner",
+      "x": 24,
+      "y": 700,
+      "width": 342,
+      "metadata": {
+        "parentId": "LerYR"
+      },
+      "gap": 10,
+      "padding": [
+        12,
+        16
+      ],
+      "fillColor": "#1a0a2e",
+      "cornerRadius": 12,
+      "alignItems": "center"
+    },
+    {
+      "id": "anCXX",
+      "type": "frame",
+      "name": "Profile — My Sanctuary",
+      "x": 0,
+      "y": 13920,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "gpHOa",
+      "type": "frame",
+      "name": "Status Bar",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 62,
+      "metadata": {
+        "parentId": "anCXX"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "JKwYZ",
+      "type": "frame",
+      "name": "Header",
+      "x": 0,
+      "y": 62,
+      "width": 390,
+      "height": 56,
+      "metadata": {
+        "parentId": "anCXX"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "7KfMY",
+      "type": "frame",
+      "name": "Identity Block",
+      "x": 0,
+      "y": 118,
+      "width": 390,
+      "metadata": {
+        "parentId": "anCXX"
+      },
+      "layout": "vertical",
+      "gap": 8,
+      "padding": [
+        16,
+        0
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "d8H76",
+      "type": "frame",
+      "name": "Stats Row",
+      "x": 24,
+      "y": 266,
+      "width": 342,
+      "height": 64,
+      "metadata": {
+        "parentId": "anCXX"
+      },
+      "fillColor": "#111110",
+      "cornerRadius": 12,
+      "justifyContent": "space_around",
+      "alignItems": "center"
+    },
+    {
+      "id": "KeSdL",
+      "type": "frame",
+      "name": "Ebenezer Vault Banner",
+      "x": 16,
+      "y": 346,
+      "width": 358,
+      "height": 56,
+      "metadata": {
+        "parentId": "anCXX"
+      },
+      "gap": 12,
+      "padding": [
+        0,
+        16
+      ],
+      "fillColor": "#1a0d00",
+      "cornerRadius": 12,
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#B45309",
+        "thickness": 1
+      }
+    },
+    {
+      "id": "vHJtI",
+      "type": "frame",
+      "name": "Filter Tabs",
+      "x": 0,
+      "y": 414,
+      "width": 390,
+      "height": 44,
+      "metadata": {
+        "parentId": "anCXX"
+      },
+      "gap": 20,
+      "padding": [
+        0,
+        16
+      ],
+      "fillColor": "#0C0A09",
+      "alignItems": "end"
+    },
+    {
+      "id": "GugFc",
+      "type": "rectangle",
+      "name": "Divider",
+      "x": 0,
+      "y": 458,
+      "width": 390,
+      "height": 1,
+      "metadata": {
+        "parentId": "anCXX"
+      },
+      "fillColor": "#1c1917"
+    },
+    {
+      "id": "GuT3S",
+      "type": "frame",
+      "name": "Card Grid",
+      "x": 16,
+      "y": 468,
+      "width": 358,
+      "height": 270,
+      "metadata": {
+        "parentId": "anCXX"
+      },
+      "gap": 12,
+      "fillColor": "#00000000"
+    },
+    {
+      "id": "NPwup",
+      "type": "frame",
+      "name": "Bottom Nav",
+      "x": 0,
+      "y": 762,
+      "width": 390,
+      "height": 82,
+      "metadata": {
+        "parentId": "anCXX"
+      },
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_around",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "top": 1
+        }
+      }
+    },
+    {
+      "id": "ua8KW",
+      "type": "frame",
+      "name": "Testimony Stream Note",
+      "x": 16,
+      "y": 750,
+      "width": 358,
+      "metadata": {
+        "parentId": "anCXX"
+      },
+      "gap": 8,
+      "padding": [
+        10,
+        16
+      ],
+      "fillColor": "#071f14",
+      "cornerRadius": 8,
+      "alignItems": "center"
+    },
+    {
+      "id": "ktqgU",
+      "type": "frame",
+      "name": "Reader — Testimony Full Screen",
+      "x": 0,
+      "y": 15080,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "YD2eV",
+      "type": "frame",
+      "name": "Status Bar",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 62,
+      "metadata": {
+        "parentId": "ktqgU"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "8gt9n",
+      "type": "frame",
+      "name": "Top Bar",
+      "x": 0,
+      "y": 62,
+      "width": 390,
+      "height": 52,
+      "metadata": {
+        "parentId": "ktqgU"
+      },
+      "padding": [
+        0,
+        20
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "DS7NL",
+      "type": "frame",
+      "name": "Slide Content Area",
+      "x": 0,
+      "y": 114,
+      "width": 390,
+      "height": 440,
+      "metadata": {
+        "parentId": "ktqgU"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center"
+    },
+    {
+      "id": "DdCmJ",
+      "type": "frame",
+      "name": "Author Strip",
+      "x": 0,
+      "y": 554,
+      "width": 390,
+      "height": 60,
+      "metadata": {
+        "parentId": "ktqgU"
+      },
+      "gap": 12,
+      "padding": [
+        0,
+        20
+      ],
+      "fillColor": "#111110",
+      "alignItems": "center"
+    },
+    {
+      "id": "e6Lqn",
+      "type": "frame",
+      "name": "Bottom Action Bar",
+      "x": 0,
+      "y": 700,
+      "width": 390,
+      "height": 72,
+      "metadata": {
+        "parentId": "ktqgU"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "top": 1
+        }
+      }
+    },
+    {
+      "id": "QEnnp",
+      "type": "frame",
+      "name": "Slide Dots",
+      "x": 0,
+      "y": 680,
+      "width": 390,
+      "height": 16,
+      "metadata": {
+        "parentId": "ktqgU"
+      },
+      "gap": 6,
+      "fillColor": "#00000000",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "GPkHt",
+      "type": "frame",
+      "name": "Notifications — List",
+      "x": 0,
+      "y": 16240,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "8Mebz",
+      "type": "frame",
+      "name": "Status Bar",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 62,
+      "metadata": {
+        "parentId": "GPkHt"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "z78kQ",
+      "type": "frame",
+      "name": "Header",
+      "x": 0,
+      "y": 62,
+      "width": 390,
+      "height": 56,
+      "metadata": {
+        "parentId": "GPkHt"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "bFlSP",
+      "type": "rectangle",
+      "name": "Divider",
+      "x": 0,
+      "y": 118,
+      "width": 390,
+      "height": 1,
+      "metadata": {
+        "parentId": "GPkHt"
+      },
+      "fillColor": "#1c1917"
+    },
+    {
+      "id": "V22DP",
+      "type": "frame",
+      "name": "Notif — Prayer Answered (unread)",
+      "x": 0,
+      "y": 119,
+      "width": 390,
+      "height": 72,
+      "metadata": {
+        "parentId": "GPkHt"
+      },
+      "gap": 12,
+      "padding": [
+        0,
+        16
+      ],
+      "fillColor": "#161412",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#B45309",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "MAOlm",
+      "type": "rectangle",
+      "name": "nf_sep1",
+      "x": 0,
+      "y": 191,
+      "width": 390,
+      "height": 1,
+      "metadata": {
+        "parentId": "GPkHt"
+      },
+      "fillColor": "#1c1917"
+    },
+    {
+      "id": "TqMfj",
+      "type": "frame",
+      "name": "Notif — Intercession Received (unread)",
+      "x": 0,
+      "y": 192,
+      "width": 390,
+      "height": 72,
+      "metadata": {
+        "parentId": "GPkHt"
+      },
+      "gap": 12,
+      "padding": [
+        0,
+        16
+      ],
+      "fillColor": "#161412",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#7E22CE",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "mno0O",
+      "type": "rectangle",
+      "name": "nf_sep2",
+      "x": 0,
+      "y": 264,
+      "width": 390,
+      "height": 1,
+      "metadata": {
+        "parentId": "GPkHt"
+      },
+      "fillColor": "#1c1917"
+    },
+    {
+      "id": "aPJwQ",
+      "type": "frame",
+      "name": "Notif — Scripture Anchored (read)",
+      "x": 0,
+      "y": 265,
+      "width": 390,
+      "height": 72,
+      "metadata": {
+        "parentId": "GPkHt"
+      },
+      "gap": 12,
+      "padding": [
+        0,
+        16
+      ],
+      "fillColor": "#0C0A09",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#292524",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "fZs5w",
+      "type": "rectangle",
+      "name": "nf_sep3",
+      "x": 0,
+      "y": 337,
+      "width": 390,
+      "height": 1,
+      "metadata": {
+        "parentId": "GPkHt"
+      },
+      "fillColor": "#1c1917"
+    },
+    {
+      "id": "9GQoq",
+      "type": "frame",
+      "name": "Notif — Testimony Rejoiced (read)",
+      "x": 0,
+      "y": 338,
+      "width": 390,
+      "height": 72,
+      "metadata": {
+        "parentId": "GPkHt"
+      },
+      "gap": 12,
+      "padding": [
+        0,
+        16
+      ],
+      "fillColor": "#0C0A09",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#071f14",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "Lndpd",
+      "type": "rectangle",
+      "name": "nf_sep4",
+      "x": 0,
+      "y": 410,
+      "width": 390,
+      "height": 1,
+      "metadata": {
+        "parentId": "GPkHt"
+      },
+      "fillColor": "#1c1917"
+    },
+    {
+      "id": "RS2Wc",
+      "type": "frame",
+      "name": "Notif — Fellow Joined (read)",
+      "x": 0,
+      "y": 411,
+      "width": 390,
+      "height": 72,
+      "metadata": {
+        "parentId": "GPkHt"
+      },
+      "gap": 12,
+      "padding": [
+        0,
+        16
+      ],
+      "fillColor": "#0C0A09",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "x1bMg",
+      "type": "frame",
+      "name": "Bottom Nav",
+      "x": 0,
+      "y": 762,
+      "width": 390,
+      "height": 82,
+      "metadata": {
+        "parentId": "GPkHt"
+      },
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_around",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "top": 1
+        }
+      }
+    },
+    {
+      "id": "7IThK",
+      "type": "frame",
+      "name": "Notif — Impact Confirmed (Sacred)",
+      "x": 0,
+      "y": 483,
+      "width": 390,
+      "height": 72,
+      "metadata": {
+        "parentId": "GPkHt"
+      },
+      "gap": 12,
+      "padding": [
+        0,
+        16
+      ],
+      "fillColor": "#1a0920",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#7E22CE",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "U8FbX",
+      "type": "frame",
+      "name": "Settings — Sanctuary Settings",
+      "x": 0,
+      "y": 17400,
+      "width": 390,
+      "height": 920,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "9Gq2c",
+      "type": "frame",
+      "name": "Status Bar",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 62,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "space_between",
+      "alignItems": "center"
+    },
+    {
+      "id": "bzOaU",
+      "type": "frame",
+      "name": "Header",
+      "x": 0,
+      "y": 62,
+      "width": 390,
+      "height": 56,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "gap": 12,
+      "padding": [
+        0,
+        16
+      ],
+      "fillColor": "#0C0A09",
+      "alignItems": "center"
+    },
+    {
+      "id": "hj7lG",
+      "type": "rectangle",
+      "name": "Divider",
+      "x": 0,
+      "y": 118,
+      "width": 390,
+      "height": 1,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "fillColor": "#1c1917"
+    },
+    {
+      "id": "4AR67",
+      "type": "text",
+      "name": "Section — Account",
+      "x": 24,
+      "y": 134,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "content": "Account",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#57534e"
+    },
+    {
+      "id": "iTdwh",
+      "type": "frame",
+      "name": "Row — Identity",
+      "x": 0,
+      "y": 156,
+      "width": 390,
+      "height": 52,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "bottom": 1
+        }
+      }
+    },
+    {
+      "id": "tvePy",
+      "type": "frame",
+      "name": "Row — Email & Password",
+      "x": 0,
+      "y": 208,
+      "width": 390,
+      "height": 52,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "bottom": 1
+        }
+      }
+    },
+    {
+      "id": "HK4s6",
+      "type": "frame",
+      "name": "Row — Connected Devices",
+      "x": 0,
+      "y": 260,
+      "width": 390,
+      "height": 52,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "bottom": 1
+        }
+      }
+    },
+    {
+      "id": "LpALM",
+      "type": "frame",
+      "name": "Row — Delete Account",
+      "x": 0,
+      "y": 312,
+      "width": 390,
+      "height": 52,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "bottom": 1
+        }
+      }
+    },
+    {
+      "id": "eaY8y",
+      "type": "text",
+      "name": "Section — Protection",
+      "x": 24,
+      "y": 514,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "content": "Sanctuary Protection",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#57534e"
+    },
+    {
+      "id": "SwpPN",
+      "type": "frame",
+      "name": "Row — Persecution Safe Mode",
+      "x": 0,
+      "y": 536,
+      "width": 390,
+      "height": 68,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "padding": [
+        12,
+        24
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "space_between",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "bottom": 1
+        }
+      }
+    },
+    {
+      "id": "il9lc",
+      "type": "frame",
+      "name": "Row — Muted Words",
+      "x": 0,
+      "y": 604,
+      "width": 390,
+      "height": 52,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "bottom": 1
+        }
+      }
+    },
+    {
+      "id": "Nbbpc",
+      "type": "text",
+      "name": "Section — Appearance",
+      "x": 24,
+      "y": 674,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "content": "Appearance",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#57534e"
+    },
+    {
+      "id": "qkOfb",
+      "type": "frame",
+      "name": "Row — Dark Mode (locked)",
+      "x": 0,
+      "y": 696,
+      "width": 390,
+      "height": 52,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "bottom": 1
+        }
+      }
+    },
+    {
+      "id": "h3tIj",
+      "type": "text",
+      "name": "Section — Support",
+      "x": 24,
+      "y": 766,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "content": "Support & Legal",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#57534e"
+    },
+    {
+      "id": "FME6h",
+      "type": "frame",
+      "name": "Row — Privacy Policy",
+      "x": 0,
+      "y": 788,
+      "width": 390,
+      "height": 52,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "bottom": 1
+        }
+      }
+    },
+    {
+      "id": "mQvBj",
+      "type": "frame",
+      "name": "Row — Terms of Sanctuary",
+      "x": 0,
+      "y": 840,
+      "width": 390,
+      "height": 52,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "bottom": 1
+        }
+      }
+    },
+    {
+      "id": "C3vPH",
+      "type": "text",
+      "name": "Footer",
+      "x": 0,
+      "y": 1000,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "content": "from Devotion Laboratory · v0.1.0",
+      "fontFamily": "Lora",
+      "fontSize": 11,
+      "fontWeight": "normal",
+      "textColor": "#292524",
+      "textAlign": "center"
+    },
+    {
+      "id": "qCgJm",
+      "type": "text",
+      "name": "Section — Notifications",
+      "x": 24,
+      "y": 382,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "content": "NOTIFICATIONS",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#57534e"
+    },
+    {
+      "id": "WXW2s",
+      "type": "frame",
+      "name": "Row — Notifications",
+      "x": 0,
+      "y": 404,
+      "width": 390,
+      "height": 52,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "bottom": 1
+        }
+      }
+    },
+    {
+      "id": "WRaV9",
+      "type": "frame",
+      "name": "Row — 2FA",
+      "x": 0,
+      "y": 456,
+      "width": 390,
+      "height": 60,
+      "metadata": {
+        "parentId": "U8FbX"
+      },
+      "padding": [
+        0,
+        24
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "space_between",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "bottom": 1
+        }
+      }
+    },
+    {
+      "id": "i05K7",
+      "type": "frame",
+      "name": "Auth — Login (Desktop 1440)",
+      "x": 470,
+      "y": 3480,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "28n5c",
+      "type": "frame",
+      "name": "Left Panel",
+      "width": 720,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "i05K7"
+      },
+      "layout": "vertical",
+      "padding": [
+        0,
+        96
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center"
+    },
+    {
+      "id": "eLQJ1",
+      "type": "frame",
+      "name": "Right Panel",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "i05K7"
+      },
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        0,
+        64
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "P3NRW",
+      "type": "frame",
+      "name": "Auth — Signup (Desktop 1440)",
+      "x": 470,
+      "y": 4640,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "OpfX4",
+      "type": "frame",
+      "name": "Left Panel",
+      "width": 720,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "P3NRW"
+      },
+      "layout": "vertical",
+      "padding": [
+        0,
+        96
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center"
+    },
+    {
+      "id": "FkfBL",
+      "type": "frame",
+      "name": "Right Panel",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "P3NRW"
+      },
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        0,
+        64
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "yV7KT",
+      "type": "frame",
+      "name": "Auth — OTP (Desktop 1440)",
+      "x": 470,
+      "y": 5800,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "Gcc2z",
+      "type": "frame",
+      "name": "Left Panel",
+      "width": 720,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "yV7KT"
+      },
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        0,
+        80
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "U59NN",
+      "type": "frame",
+      "name": "Right Panel",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "yV7KT"
+      },
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        0,
+        64
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "wBcWP",
+      "type": "frame",
+      "name": "Prayer — Prayer Board (Desktop 1440)",
+      "x": 470,
+      "y": 11600,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "nKsUB",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 280,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "wBcWP"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        24
+      ],
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_between",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "right": 1
+        }
+      }
+    },
+    {
+      "id": "xmE75",
+      "type": "frame",
+      "name": "Main Content",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "wBcWP"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "YUaRo",
+      "type": "frame",
+      "name": "Prayer — Upper Room (Desktop 1440)",
+      "x": 470,
+      "y": 12760,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "u6hlw",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 280,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "YUaRo"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        24
+      ],
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_between",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "right": 1
+        }
+      }
+    },
+    {
+      "id": "Q8Dc0",
+      "type": "frame",
+      "name": "Main Content",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "YUaRo"
+      },
+      "layout": "vertical",
+      "padding": [
+        48,
+        0
+      ],
+      "fillColor": "#0C0A09",
+      "alignItems": "center"
+    },
+    {
+      "id": "mYbMo",
+      "type": "frame",
+      "name": "Profile — My Sanctuary (Desktop 1440)",
+      "x": 470,
+      "y": 13920,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "1ChXu",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 280,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "mYbMo"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        24
+      ],
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_between",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "right": 1
+        }
+      }
+    },
+    {
+      "id": "JOmDw",
+      "type": "frame",
+      "name": "Main Content",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "mYbMo"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "xv6dY",
+      "type": "frame",
+      "name": "Reader — Testimony Full Screen (Desktop 1440)",
+      "x": 470,
+      "y": 15080,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "egvWA",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 280,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "xv6dY"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        24
+      ],
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_between",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "right": 1
+        }
+      }
+    },
+    {
+      "id": "RokbM",
+      "type": "frame",
+      "name": "Main Content",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "xv6dY"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "wGZDh",
+      "type": "frame",
+      "name": "Notifications — List (Desktop 1440)",
+      "x": 470,
+      "y": 16240,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "EOjje",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 280,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "wGZDh"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        24
+      ],
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_between",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "right": 1
+        }
+      }
+    },
+    {
+      "id": "76zMK",
+      "type": "frame",
+      "name": "Main Content",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "wGZDh"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "nzy4X",
+      "type": "frame",
+      "name": "Settings — Sanctuary Settings (Desktop 1440)",
+      "x": 470,
+      "y": 17400,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "FNgIG",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 280,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "nzy4X"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        24
+      ],
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_between",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "right": 1
+        }
+      }
+    },
+    {
+      "id": "4Vly3",
+      "type": "frame",
+      "name": "Main Content",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "nzy4X"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "BvzTE",
+      "type": "frame",
+      "name": "Auth — Login (1920×1080)",
+      "x": 2070,
+      "y": 3480,
+      "width": 1920,
+      "height": 1080,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "PSEFU",
+      "type": "frame",
+      "name": "Left Panel",
+      "width": 900,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "BvzTE"
+      },
+      "layout": "vertical",
+      "padding": [
+        0,
+        112
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center"
+    },
+    {
+      "id": "fv0tW",
+      "type": "frame",
+      "name": "Right Panel",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "BvzTE"
+      },
+      "layout": "vertical",
+      "gap": 40,
+      "padding": [
+        0,
+        80
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "Y38hb",
+      "type": "frame",
+      "name": "Auth — Signup (1920×1080)",
+      "x": 2070,
+      "y": 4640,
+      "width": 1920,
+      "height": 1080,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "IsUuH",
+      "type": "frame",
+      "name": "Left Panel",
+      "width": 900,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "Y38hb"
+      },
+      "layout": "vertical",
+      "padding": [
+        0,
+        112
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center"
+    },
+    {
+      "id": "FMLhW",
+      "type": "frame",
+      "name": "Right Panel",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "Y38hb"
+      },
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        0,
+        80
+      ],
+      "fillColor": "#111110",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "j6hAz",
+      "type": "frame",
+      "name": "OTP 1920",
+      "x": 2070,
+      "y": 5800,
+      "width": 1920,
+      "height": 1080,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "kWqIg",
+      "type": "frame",
+      "name": "Left Panel",
+      "width": 900,
+      "height": 1080,
+      "metadata": {
+        "parentId": "j6hAz"
+      },
+      "layout": "vertical",
+      "padding": [
+        0,
+        80
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "Ytxla",
+      "type": "frame",
+      "name": "Right Panel",
+      "width": 1020,
+      "height": 1080,
+      "metadata": {
+        "parentId": "j6hAz"
+      },
+      "layout": "vertical",
+      "gap": 40,
+      "padding": 80,
+      "fillColor": "#0e0920",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "aZNrA",
+      "type": "frame",
+      "name": "Prayer Board 1920",
+      "x": 2070,
+      "y": 11600,
+      "width": 1920,
+      "height": 1080,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "UC0n3",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 280,
+      "height": 1080,
+      "metadata": {
+        "parentId": "aZNrA"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        0
+      ],
+      "fillColor": "#0e0920"
+    },
+    {
+      "id": "a1Vpt",
+      "type": "frame",
+      "name": "Main",
+      "width": 1640,
+      "height": 1080,
+      "metadata": {
+        "parentId": "aZNrA"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "R15Mf",
+      "type": "frame",
+      "name": "Upper Room 1920",
+      "x": 2070,
+      "y": 12760,
+      "width": 1920,
+      "height": 1080,
+      "layout": "none",
+      "fillColor": "#0e0920"
+    },
+    {
+      "id": "kgezg",
+      "type": "frame",
+      "name": "Back Button",
+      "x": 48,
+      "y": 40,
+      "width": 120,
+      "height": 44,
+      "metadata": {
+        "parentId": "R15Mf"
+      },
+      "gap": 8,
+      "fillColor": "#ffffff0d",
+      "cornerRadius": 22,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "XNXrO",
+      "type": "text",
+      "name": "Page Title",
+      "x": 860,
+      "y": 52,
+      "metadata": {
+        "parentId": "R15Mf"
+      },
+      "content": "Upper Room",
+      "fontFamily": "Cormorant Garamond",
+      "fontSize": 20,
+      "fontWeight": "600",
+      "textColor": "#7E22CE",
+      "textAlign": "center"
+    },
+    {
+      "id": "R4N4B",
+      "type": "ellipse",
+      "name": "Outer Pulse",
+      "x": 620,
+      "y": 200,
+      "width": 680,
+      "height": 680,
+      "metadata": {
+        "parentId": "R15Mf"
+      },
+      "fillColor": "#7E22CE33"
+    },
+    {
+      "id": "v3GfR",
+      "type": "ellipse",
+      "name": "Mid Pulse",
+      "x": 690,
+      "y": 270,
+      "width": 540,
+      "height": 540,
+      "metadata": {
+        "parentId": "R15Mf"
+      },
+      "fillColor": "#7E22CE66"
+    },
+    {
+      "id": "kIB9K",
+      "type": "ellipse",
+      "name": "Track",
+      "x": 760,
+      "y": 340,
+      "width": 400,
+      "height": 400,
+      "metadata": {
+        "parentId": "R15Mf"
+      },
+      "fillColor": "#1C1917",
+      "stroke": {
+        "align": "inside",
+        "fill": "#44403C",
+        "thickness": 2
+      }
+    },
+    {
+      "id": "hdEFA",
+      "type": "ellipse",
+      "name": "Fill Ring",
+      "x": 760,
+      "y": 340,
+      "width": 400,
+      "height": 400,
+      "metadata": {
+        "parentId": "R15Mf"
+      },
+      "fillColor": "#00000000",
+      "stroke": {
+        "align": "inside",
+        "fill": "#7E22CE",
+        "thickness": 8
+      }
+    },
+    {
+      "id": "6rHxY",
+      "type": "text",
+      "name": "Timer",
+      "x": 856,
+      "y": 490,
+      "metadata": {
+        "parentId": "R15Mf"
+      },
+      "content": "01:47",
+      "fontFamily": "Cormorant Garamond",
+      "fontSize": 80,
+      "fontWeight": "600",
+      "textColor": "#F5F0E8",
+      "textAlign": "center"
+    },
+    {
+      "id": "dGnuJ",
+      "type": "text",
+      "name": "Timer Sub",
+      "x": 900,
+      "y": 588,
+      "metadata": {
+        "parentId": "R15Mf"
+      },
+      "content": "remaining",
+      "fontFamily": "Lora",
+      "fontSize": 18,
+      "fontWeight": "normal",
+      "textColor": "#78716C",
+      "textAlign": "center"
+    },
+    {
+      "id": "LZgVF",
+      "type": "frame",
+      "name": "Prayer Panel",
+      "x": 1360,
+      "y": 340,
+      "width": 480,
+      "height": 400,
+      "metadata": {
+        "parentId": "R15Mf"
+      },
+      "layout": "vertical",
+      "gap": 16,
+      "padding": 32,
+      "fillColor": "#1C191799",
+      "cornerRadius": 12,
+      "stroke": {
+        "align": "inside",
+        "fill": "#7E22CE",
+        "thickness": {
+          "left": 3
+        }
+      }
+    },
+    {
+      "id": "emGs5",
+      "type": "frame",
+      "name": "Bottom Bar",
+      "x": 560,
+      "y": 972,
+      "width": 800,
+      "height": 72,
+      "metadata": {
+        "parentId": "R15Mf"
+      },
+      "gap": 24,
+      "fillColor": "#00000000",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "fRmeu",
+      "type": "frame",
+      "name": "My Sanctuary 1920",
+      "x": 2070,
+      "y": 13920,
+      "width": 1920,
+      "height": 1080,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "9KnGL",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 280,
+      "height": 1080,
+      "metadata": {
+        "parentId": "fRmeu"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        0
+      ],
+      "fillColor": "#0e0920"
+    },
+    {
+      "id": "fNFcB",
+      "type": "frame",
+      "name": "Main",
+      "width": 1640,
+      "height": 1080,
+      "metadata": {
+        "parentId": "fRmeu"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "6UNEQ",
+      "type": "frame",
+      "name": "Feed — Witness Wall (Refined)",
+      "x": 2483,
+      "y": 8212,
+      "width": 1440,
+      "height": 900,
+      "fillColor": {
+        "center": {
+          "x": 0.25,
+          "y": 0.1
+        },
+        "colors": [
+          {
+            "color": "#1b0a2a",
+            "position": 0
+          },
+          {
+            "color": "#07070B",
+            "position": 0.45
+          },
+          {
+            "color": "#07070B",
+            "position": 1
+          }
+        ],
+        "enabled": true,
+        "gradientType": "radial",
+        "rotation": 0,
+        "size": {
+          "height": 1.4,
+          "width": 1.4
+        },
+        "type": "gradient"
+      }
+    },
+    {
+      "id": "Hoo49",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 272,
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "6UNEQ"
+      },
+      "layout": "vertical",
+      "padding": [
+        0,
+        0,
+        16,
+        0
+      ],
+      "fillColor": "#050509",
+      "stroke": {
+        "align": "inside",
+        "fill": "#ffffff12",
+        "thickness": {
+          "right": 1
+        }
+      }
+    },
+    {
+      "id": "QbjeY",
+      "type": "frame",
+      "name": "Main",
+      "width": "fill_container",
+      "height": "fill_container",
+      "metadata": {
+        "parentId": "6UNEQ"
+      },
+      "layout": "vertical"
+    },
+    {
+      "id": "lkgIB",
+      "type": "frame",
+      "name": "Reader 1920",
+      "x": 2070,
+      "y": 15080,
+      "width": 1920,
+      "height": 1080,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "WJTy7",
+      "type": "frame",
+      "name": "Back Button",
+      "x": 48,
+      "y": 40,
+      "width": 120,
+      "height": 44,
+      "metadata": {
+        "parentId": "lkgIB"
+      },
+      "gap": 8,
+      "fillColor": "#ffffff0d",
+      "cornerRadius": 22,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "n5yjc",
+      "type": "frame",
+      "name": "Menu Button",
+      "x": 1828,
+      "y": 40,
+      "width": 44,
+      "height": 44,
+      "metadata": {
+        "parentId": "lkgIB"
+      },
+      "layout": "vertical",
+      "fillColor": "#ffffff0d",
+      "cornerRadius": 22,
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "K6EX3",
+      "type": "frame",
+      "name": "Content",
+      "x": 360,
+      "y": 40,
+      "width": 1200,
+      "height": 1000,
+      "metadata": {
+        "parentId": "lkgIB"
+      },
+      "layout": "vertical",
+      "gap": 32,
+      "fillColor": "#00000000",
+      "alignItems": "center"
+    },
+    {
+      "id": "Ntjbz",
+      "type": "frame",
+      "name": "Notifications 1920",
+      "x": 2070,
+      "y": 16240,
+      "width": 1920,
+      "height": 1080,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "eOQb3",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 280,
+      "height": 1080,
+      "metadata": {
+        "parentId": "Ntjbz"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        0
+      ],
+      "fillColor": "#0e0920"
+    },
+    {
+      "id": "EYxKn",
+      "type": "frame",
+      "name": "Main",
+      "width": 1640,
+      "height": 1080,
+      "metadata": {
+        "parentId": "Ntjbz"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "ZEpZA",
+      "type": "frame",
+      "name": "Settings 1920",
+      "x": 2070,
+      "y": 17400,
+      "width": 1920,
+      "height": 1080,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "TpxoP",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 280,
+      "height": 1080,
+      "metadata": {
+        "parentId": "ZEpZA"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        0
+      ],
+      "fillColor": "#0e0920"
+    },
+    {
+      "id": "SyzFg",
+      "type": "frame",
+      "name": "Main",
+      "width": 1640,
+      "height": 1080,
+      "metadata": {
+        "parentId": "ZEpZA"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "uVwQx",
+      "type": "frame",
+      "name": "Feed Dark Mobile",
+      "x": 0,
+      "y": 8120,
+      "width": 390,
+      "height": 844,
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "iUcQe",
+      "type": "frame",
+      "name": "Bottom Nav",
+      "width": "fill_container",
+      "height": 72,
+      "metadata": {
+        "parentId": "uVwQx"
+      },
+      "fillColor": "#0e0920",
+      "justifyContent": "space_around",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1C1917",
+        "thickness": {
+          "top": 1
+        }
+      }
+    },
+    {
+      "id": "AHihz",
+      "type": "frame",
+      "name": "Content",
+      "width": "fill_container",
+      "height": 772,
+      "metadata": {
+        "parentId": "uVwQx"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "7hIp6",
+      "type": "frame",
+      "name": "Feed Light Mobile",
+      "x": 2025,
+      "y": 8176,
+      "width": 390,
+      "height": 844,
+      "layout": "vertical",
+      "fillColor": "#F5F0E8"
+    },
+    {
+      "id": "knF5b",
+      "type": "frame",
+      "name": "Bottom Nav",
+      "width": "fill_container",
+      "height": 72,
+      "metadata": {
+        "parentId": "7hIp6"
+      },
+      "fillColor": "#FFFFFF",
+      "justifyContent": "space_around",
+      "alignItems": "center",
+      "stroke": {
+        "align": "inside",
+        "fill": "#E8E5DF",
+        "thickness": {
+          "top": 1
+        }
+      }
+    },
+    {
+      "id": "VEDmz",
+      "type": "frame",
+      "name": "Content",
+      "width": "fill_container",
+      "height": 772,
+      "metadata": {
+        "parentId": "7hIp6"
+      },
+      "layout": "vertical",
+      "fillColor": "#F5F0E8"
+    },
+    {
+      "id": "fSROa",
+      "type": "frame",
+      "name": "Feed Wall 1440",
+      "x": 2070,
+      "y": 19720,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "Wss49",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 280,
+      "height": 900,
+      "metadata": {
+        "parentId": "fSROa"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        0
+      ],
+      "fillColor": "#0e0920"
+    },
+    {
+      "id": "cCHGd",
+      "type": "frame",
+      "name": "Main",
+      "width": 1160,
+      "height": 900,
+      "metadata": {
+        "parentId": "fSROa"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "LBwhO",
+      "type": "frame",
+      "name": "Compose Sheet 1920",
+      "x": 2070,
+      "y": 9280,
+      "width": 1920,
+      "height": 1080,
+      "layout": "none",
+      "fillColor": "#0C0A09CC"
+    },
+    {
+      "id": "i0ile",
+      "type": "frame",
+      "name": "Scrim",
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080,
+      "metadata": {
+        "parentId": "LBwhO"
+      },
+      "fillColor": "#000000CC"
+    },
+    {
+      "id": "lff7V",
+      "type": "frame",
+      "name": "Modal",
+      "x": 510,
+      "y": 120,
+      "width": 900,
+      "height": 840,
+      "metadata": {
+        "parentId": "LBwhO"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09",
+      "cornerRadius": 12,
+      "stroke": {
+        "align": "inside",
+        "fill": "#1C1917",
+        "thickness": 1
+      }
+    },
+    {
+      "id": "Cgzj3",
+      "type": "frame",
+      "name": "Globe Mobile",
+      "x": 0,
+      "y": 18560,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "6lb7K",
+      "type": "frame",
+      "name": "Content",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 772,
+      "metadata": {
+        "parentId": "Cgzj3"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "AvrAe",
+      "type": "frame",
+      "name": "Bottom Nav",
+      "x": 0,
+      "y": 762,
+      "width": 390,
+      "height": 82,
+      "metadata": {
+        "parentId": "Cgzj3"
+      },
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_around",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1C1917",
+        "thickness": {
+          "top": 1
+        }
+      }
+    },
+    {
+      "id": "7ftS2",
+      "type": "frame",
+      "name": "Globe 1440",
+      "x": 470,
+      "y": 18560,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "mref8",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 280,
+      "height": 900,
+      "metadata": {
+        "parentId": "7ftS2"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        0
+      ],
+      "fillColor": "#0e0920"
+    },
+    {
+      "id": "3nAxC",
+      "type": "frame",
+      "name": "Main",
+      "width": 1160,
+      "height": 900,
+      "metadata": {
+        "parentId": "7ftS2"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "xeSXz",
+      "type": "frame",
+      "name": "Globe 1920",
+      "x": 2070,
+      "y": 18560,
+      "width": 1920,
+      "height": 1080,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "fmwzz",
+      "type": "frame",
+      "name": "Sidebar",
+      "width": 280,
+      "height": 1080,
+      "metadata": {
+        "parentId": "xeSXz"
+      },
+      "layout": "vertical",
+      "padding": [
+        32,
+        0
+      ],
+      "fillColor": "#0e0920"
+    },
+    {
+      "id": "VFzPa",
+      "type": "frame",
+      "name": "Main",
+      "width": 1640,
+      "height": 1080,
+      "metadata": {
+        "parentId": "xeSXz"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "dBR34",
+      "type": "frame",
+      "name": "Scripture Picker Mobile",
+      "x": 0,
+      "y": 19720,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09CC"
+    },
+    {
+      "id": "rAVDl",
+      "type": "frame",
+      "name": "Scrim",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 844,
+      "metadata": {
+        "parentId": "dBR34"
+      },
+      "fillColor": "#000000CC"
+    },
+    {
+      "id": "jBoDP",
+      "type": "frame",
+      "name": "Bottom Sheet",
+      "x": 0,
+      "y": 244,
+      "width": 390,
+      "height": 600,
+      "metadata": {
+        "parentId": "dBR34"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09",
+      "cornerRadius": [
+        24,
+        24,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ugKE3",
+      "type": "frame",
+      "name": "Scripture Picker Desktop",
+      "x": 470,
+      "y": 19720,
+      "width": 1440,
+      "height": 900,
+      "layout": "none",
+      "fillColor": "#0C0A09CC"
+    },
+    {
+      "id": "RGwFb",
+      "type": "frame",
+      "name": "Scrim",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "metadata": {
+        "parentId": "ugKE3"
+      },
+      "fillColor": "#000000CC"
+    },
+    {
+      "id": "0QmWG",
+      "type": "frame",
+      "name": "Modal",
+      "x": 420,
+      "y": 100,
+      "width": 600,
+      "height": 700,
+      "metadata": {
+        "parentId": "ugKE3"
+      },
+      "layout": "vertical",
+      "fillColor": "#0C0A09",
+      "cornerRadius": 12,
+      "stroke": {
+        "align": "inside",
+        "fill": "#1C1917",
+        "thickness": 1
+      }
+    },
+    {
+      "id": "l4Hbi",
+      "type": "frame",
+      "name": "Post-Publish Success Mobile",
+      "x": 0,
+      "y": 20880,
+      "width": 390,
+      "height": 844,
+      "layout": "none",
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "HPbXz",
+      "type": "frame",
+      "name": "Content",
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 772,
+      "metadata": {
+        "parentId": "l4Hbi"
+      },
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        40,
+        24
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "hbskU",
+      "type": "frame",
+      "name": "Bottom Nav",
+      "x": 0,
+      "y": 762,
+      "width": 390,
+      "height": 82,
+      "metadata": {
+        "parentId": "l4Hbi"
+      },
+      "fillColor": "#0D0B0A",
+      "justifyContent": "space_around",
+      "stroke": {
+        "align": "inside",
+        "fill": "#1c1917",
+        "thickness": {
+          "top": 1
+        }
+      }
+    },
+    {
+      "id": "1bBLA",
+      "type": "frame",
+      "name": "Post-Publish Success Desktop",
+      "x": 470,
+      "y": 20880,
+      "width": 1440,
+      "height": 900,
+      "fillColor": "#0C0A09"
+    },
+    {
+      "id": "YZQVS",
+      "type": "frame",
+      "name": "Content",
+      "width": "fill_container",
+      "height": 900,
+      "metadata": {
+        "parentId": "1bBLA"
+      },
+      "layout": "vertical",
+      "gap": 40,
+      "padding": [
+        80,
+        120
+      ],
+      "fillColor": "#0C0A09",
+      "justifyContent": "center",
+      "alignItems": "center"
+    },
+    {
+      "id": "UQ3q4",
+      "type": "text",
+      "name": "Label — Col Mobile",
+      "x": 0,
+      "y": -50,
+      "content": "MOBILE  390×844",
+      "fontFamily": "Inter",
+      "fontSize": 14,
+      "fontWeight": "700",
+      "textColor": "#57534e"
+    },
+    {
+      "id": "D4hhe",
+      "type": "text",
+      "name": "Label — Col 1440",
+      "x": 470,
+      "y": -50,
+      "content": "DESKTOP  1440×900",
+      "fontFamily": "Inter",
+      "fontSize": 14,
+      "fontWeight": "700",
+      "textColor": "#57534e"
+    },
+    {
+      "id": "L1Hyt",
+      "type": "text",
+      "name": "Label — Col 1920",
+      "x": 2070,
+      "y": -50,
+      "content": "DESKTOP  1920×1080",
+      "fontFamily": "Inter",
+      "fontSize": 14,
+      "fontWeight": "700",
+      "textColor": "#57534e"
+    },
+    {
+      "id": "1OCwi",
+      "type": "text",
+      "name": "Row — Onboarding 1",
+      "x": 0,
+      "y": -20,
+      "content": "01  ONBOARDING — NOT A LIKE BUTTON",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "YLIbQ",
+      "type": "text",
+      "name": "Row — Onboarding 2",
+      "x": 0,
+      "y": 1140,
+      "content": "02  ONBOARDING — THE ARC",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "dhcUH",
+      "type": "text",
+      "name": "Row — Onboarding 3",
+      "x": 0,
+      "y": 2300,
+      "content": "03  ONBOARDING — ENTER",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "uCbDE",
+      "type": "text",
+      "name": "Row — Auth Login",
+      "x": 0,
+      "y": 3460,
+      "content": "04  AUTH — LOGIN",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "1kX3O",
+      "type": "text",
+      "name": "Row — Auth Signup",
+      "x": 0,
+      "y": 4620,
+      "content": "05  AUTH — SIGNUP",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "6g0VC",
+      "type": "text",
+      "name": "Row — Auth OTP",
+      "x": 0,
+      "y": 5780,
+      "content": "06  AUTH — OTP VERIFICATION",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "Tx6ij",
+      "type": "text",
+      "name": "Row — Witness Wall",
+      "x": 0,
+      "y": 6940,
+      "content": "07  WITNESS WALL",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "2Chuv",
+      "type": "text",
+      "name": "Row — Feed",
+      "x": 0,
+      "y": 8100,
+      "content": "08  FEED (DARK / LIGHT VARIANTS)",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "l8CU5",
+      "type": "text",
+      "name": "Row — Compose Sheet",
+      "x": 0,
+      "y": 9260,
+      "content": "09  COMPOSE — BEAR WITNESS SHEET",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "7JjoX",
+      "type": "text",
+      "name": "Row — Compose Write",
+      "x": 0,
+      "y": 10420,
+      "content": "10  COMPOSE — WRITE SCREEN",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "XUem9",
+      "type": "text",
+      "name": "Row — Prayer Board",
+      "x": 0,
+      "y": 11580,
+      "content": "11  PRAYER BOARD",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "3n3Un",
+      "type": "text",
+      "name": "Row — Upper Room",
+      "x": 0,
+      "y": 12740,
+      "content": "12  PRAYER — UPPER ROOM",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "9IEuh",
+      "type": "text",
+      "name": "Row — My Sanctuary",
+      "x": 0,
+      "y": 13900,
+      "content": "13  MY SANCTUARY",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "fY68S",
+      "type": "text",
+      "name": "Row — Reader",
+      "x": 0,
+      "y": 15060,
+      "content": "14  TESTIMONY READER",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "fUmpd",
+      "type": "text",
+      "name": "Row — Notifications",
+      "x": 0,
+      "y": 16220,
+      "content": "15  NOTIFICATIONS",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "gkJw4",
+      "type": "text",
+      "name": "Row — Settings",
+      "x": 0,
+      "y": 17380,
+      "content": "16  SANCTUARY SETTINGS",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "GBaRq",
+      "type": "text",
+      "name": "Row — Globe",
+      "x": 0,
+      "y": 18540,
+      "content": "17  GLOBE",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "QDeok",
+      "type": "text",
+      "name": "Row — Scripture Picker",
+      "x": 0,
+      "y": 19700,
+      "content": "18  SCRIPTURE PICKER (ANCHOR A PROMISE)",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "mhYdz",
+      "type": "text",
+      "name": "Row — Lament Covenant",
+      "x": 0,
+      "y": 20860,
+      "content": "19  LAMENT COVENANT MODAL",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "bzYWy",
+      "type": "text",
+      "name": "Row — Post Publish",
+      "x": 0,
+      "y": 22020,
+      "content": "20  POST-PUBLISH SUCCESS",
+      "fontFamily": "Inter",
+      "fontSize": 11,
+      "fontWeight": "600",
+      "textColor": "#292524"
+    },
+    {
+      "id": "dXQIV",
+      "type": "text",
+      "name": "Design System Title",
+      "x": 40,
+      "y": 40,
+      "content": "NEO-STAINED GLASS DESIGN SYSTEM — Testifyah",
+      "fontFamily": "Inter",
+      "fontSize": 32,
+      "fontWeight": "700",
+      "textColor": "#1F2937"
+    },
+    {
+      "id": "uvar3",
+      "type": "text",
+      "name": "Color System Title",
+      "x": 40,
+      "y": 100,
+      "content": "COLOR PALETTE",
+      "fontFamily": "Inter",
+      "fontSize": 24,
+      "fontWeight": "600",
+      "textColor": "#374151"
+    },
+    {
+      "id": "Bz24c",
+      "type": "text",
+      "name": "Typography Title",
+      "x": 40,
+      "y": 500,
+      "content": "TYPOGRAPHY SYSTEM",
+      "fontFamily": "Inter",
+      "fontSize": 24,
+      "fontWeight": "600",
+      "textColor": "#374151"
+    },
+    {
+      "id": "mt959",
+      "type": "text",
+      "name": "Neutral Colors Title",
+      "x": 40,
+      "y": 960,
+      "content": "NEUTRAL & SEMANTIC COLORS",
+      "fontFamily": "Inter",
+      "fontSize": 24,
+      "fontWeight": "600",
+      "textColor": "#374151"
+    },
+    {
+      "id": "Q3FoO",
+      "type": "text",
+      "name": "Components Title",
+      "x": 40,
+      "y": 1330,
+      "content": "COMPONENT LIBRARY",
+      "fontFamily": "Inter",
+      "fontSize": 24,
+      "fontWeight": "600",
+      "textColor": "#374151"
+    },
+    {
+      "id": "OrjHa",
+      "type": "text",
+      "name": "Effects Title",
+      "x": 40,
+      "y": 2500,
+      "content": "NEO-STAINED GLASS EFFECTS",
+      "fontFamily": "Inter",
+      "fontSize": 24,
+      "fontWeight": "600",
+      "textColor": "#374151"
+    },
+    {
+      "id": "Tmyva",
+      "type": "text",
+      "name": "Layout Title",
+      "x": 40,
+      "y": 2920,
+      "content": "LAYOUT PATTERNS & SPACING",
+      "fontFamily": "Inter",
+      "fontSize": 24,
+      "fontWeight": "600",
+      "textColor": "#374151"
+    },
+    {
+      "id": "3W8MB",
+      "type": "text",
+      "name": "Principles Title",
+      "x": 40,
+      "y": 3300,
+      "content": "DESIGN PRINCIPLES — THE SACRED AESTHETIC",
+      "fontFamily": "Inter",
+      "fontSize": 24,
+      "fontWeight": "600",
+      "textColor": "#374151"
+    },
+    {
+      "id": "EUiiZ",
+      "type": "text",
+      "name": "Contrast Title",
+      "x": 40,
+      "y": 3800,
+      "content": "CONTRAST & ACCESSIBILITY CHECKLIST",
+      "fontFamily": "Inter",
+      "fontSize": 24,
+      "fontWeight": "600",
+      "textColor": "#374151"
+    },
+    {
+      "id": "1Gm9U",
+      "type": "text",
+      "name": "Usage Title",
+      "x": 40,
+      "y": 4220,
+      "content": "USAGE GUIDELINES & BRAND VOICE",
+      "fontFamily": "Inter",
+      "fontSize": 24,
+      "fontWeight": "600",
+      "textColor": "#374151"
+    },
+    {
+      "id": "dB6Qh",
+      "type": "text",
+      "name": "Examples Title",
+      "x": 40,
+      "y": 5580,
+      "content": "REAL-WORLD COMPONENT EXAMPLES",
+      "fontFamily": "Inter",
+      "fontSize": 24,
+      "fontWeight": "600",
+      "textColor": "#374151"
+    },
+    {
+      "id": "SuOtN",
+      "type": "text",
+      "name": "Summary Title",
+      "x": 40,
+      "y": 6080,
+      "content": "DESIGN SYSTEM QUICK REFERENCE",
+      "fontFamily": "Inter",
+      "fontSize": 24,
+      "fontWeight": "600",
+      "textColor": "#374151"
+    },
+    {
+      "id": "WOZ2b",
+      "type": "text",
+      "name": "Master Title",
+      "x": 40,
+      "y": -100,
+      "content": "NEO-STAINED GLASS DESIGN SYSTEM",
+      "fontFamily": "Inter",
+      "fontSize": 48,
+      "fontWeight": "700",
+      "textColor": "#111827"
+    },
+    {
+      "id": "ZX9n4",
+      "type": "text",
+      "name": "Master Subtitle",
+      "x": 40,
+      "y": -40,
+      "content": "Comprehensive Brand Identity & Component Library for Testifyah",
+      "fontFamily": "Inter",
+      "fontSize": 18,
+      "fontWeight": "500",
+      "textColor": "#6B7280"
+    }
+  ]
+}

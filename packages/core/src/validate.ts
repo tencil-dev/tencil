@@ -8,6 +8,7 @@ import type {
   TencilDocument,
   TencilValidationResult,
   TencilValidationError,
+  TencilLink,
 } from "./types.js";
 
 /**
@@ -48,6 +49,7 @@ const NodeBaseSchema = GeometrySchema.extend({
   id: z.string().min(1, "Node ID cannot be empty"),
   type: z.string().min(1, "Node type cannot be empty"),
   name: z.string().optional(),
+  parentId: z.string().optional(),
   metadata: z.record(z.unknown()).optional(),
 });
 
@@ -144,6 +146,43 @@ export function validateTencilDocument(
   doc: unknown
 ): TencilValidationResult {
   return parseTencilDocument(doc);
+}
+
+/**
+ * Validate referential integrity of links in a TencilDocument.
+ * Checks that all referenced node IDs exist in the document.
+ *
+ * @param doc - TencilDocument to validate
+ * @returns Validation result with errors if links reference non-existent nodes
+ */
+export function validateLinkIntegrity(doc: TencilDocument): TencilValidationResult {
+  const errors: TencilValidationError[] = [];
+  const nodeIds = new Set(doc.nodes.map((n) => n.id));
+
+  if (doc.links) {
+    for (const link of doc.links) {
+      if (!nodeIds.has(link.source.nodeId)) {
+        errors.push({
+          field: `links.${link.id}.source.nodeId`,
+          message: `Source node not found: ${link.source.nodeId}`,
+          value: link.source.nodeId,
+        });
+      }
+      if (!nodeIds.has(link.target.nodeId)) {
+        errors.push({
+          field: `links.${link.id}.target.nodeId`,
+          message: `Target node not found: ${link.target.nodeId}`,
+          value: link.target.nodeId,
+        });
+      }
+    }
+  }
+
+  if (errors.length > 0) {
+    return { success: false, errors };
+  }
+
+  return { success: true, data: doc };
 }
 
 /**
