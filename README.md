@@ -90,6 +90,6 @@ Tencil core will always be free and open source. Paid services (Cloud, Enterpris
 
 ---
 
-**Status:** Pre-alpha, active development  
-**Next Milestone:** M1 (Q3 2026) — Penpot ↔ Pencil pipeline  
-**Contact:** Open an issue or discussion
+**Status:** M1 Complete, M2 In Progress  
+**Current Phase:** The Standard — freezing schema v1.0, registering MIME types  
+**Contact:** Open an issue or see [docs/GOVERNANCE.md](./docs/GOVERNANCE.md)
