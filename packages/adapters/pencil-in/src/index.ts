@@ -13,6 +13,7 @@
  * ```
  */
 
+import { randomUUID } from "crypto";
 import type { TencilDocument, TencilNodeBase } from "@tencil/core";
 import type { PencilNode, PencilToTencilOptions } from "./types.js";
 
@@ -109,7 +110,7 @@ export function pencilNodesToTencil(
   nodes: PencilNode[],
   options?: PencilToTencilOptions
 ): TencilDocument {
-  const docId = options?.id ?? crypto.randomUUID();
+  const docId = options?.id ?? randomUUID();
   const docName = options?.name;
 
   // Filter out any node types that are purely structural / non-visual

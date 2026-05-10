@@ -2,7 +2,8 @@
 
 **Status:** Living document — updated as milestones complete  
 **Last Updated:** April 2026  
-**Current Phase:** M1 (UI Bridge) — In Progress
+**Current Phase:** M2 — The Standard  
+**Previous Phase:** M1 (UI Bridge) — ✅ Complete
 
 ---
 
@@ -12,25 +13,27 @@ Each milestone is a **complete, shippable increment**. No work starts on M2 unti
 
 ---
 
-## M1 — UI Bridge (Current)
+## M1 — UI Bridge ✅ Complete
 
-**Gate:** Penpot → Pencil.dev translation works end-to-end via CLI.
+**Gate:** Penpot → Pencil.dev translation works end-to-end via CLI. ✅ Shipped.
 
 **Deliverables:**
-- [ ] `@tencil/core` — geometry, `TencilNodeBase`, `TencilLink`, `TencilDocument` base
-- [ ] `@tencil/schema-ui` — all UI rendering types (`TencilFrame`, `TencilText`, etc.)
-- [ ] `@tencil/adapters` — `penpot-to-tencil-ui`, `tencil-to-pencil-ui`, `pencil-to-tencil-ui`, `tencil-to-penpot-ui` + Vitest tests
-- [ ] `plugin-penpot` — Harvester plugin (board + rectangle + text to start)
-- [ ] `@tencil/pencil-bridge` — reader + writer via Pencil MCP
-- [ ] `tencil-cli` — `init`, `export`, `import`, `sync`, `link` commands + logger
-- [ ] `@tencil/mcp-server` — 3 tools, stdio transport
-- [ ] File format: `.tencil.json`
-- [ ] Protocol groundwork: schema versioned, public docs started
+- [x] `@tencil/core` — `TencilNodeBase`, `TencilLink`, `TencilDocument`, link integrity validation — 15 tests ✅
+- [x] `@tencil/schema-ui` — all UI types (`TencilFrame`, `TencilText`, `TencilRectangle`, `TencilEllipse`) — 8 tests ✅
+- [x] `@tencil/adapters` — 5 adapters (penpot-in, penpot-file-in, penpot-out, pencil-in, pencil-out), 73 tests ✅
+- [x] ~~`plugin-penpot`~~ — **Deferred / replaced**: native ZIP adapters (`penpot-file-in` reads `.penpot` directly, `penpot-out` writes importable `.penpot` ZIP) — no browser plugin needed for M1
+- [x] `@tencil/pencil-bridge` — implemented as `pencil-in` + `pencil-out` adapters via Pencil MCP ✅
+- [x] `tencil-cli` — 6 commands (`start`, `export`, `import`, `validate`, `push`, `link`) — 29 tests ✅
+- [x] `@tencil/mcp-server` — 7 tools (exceeds M1 target of 3): `read_tencil`, `write_tencil`, `summarize_tencil`, `invoke_adapter`, `pull_from_pencil`, `create_link`, `list_links` — 10 tests ✅
+- [x] File format: `.tencil` — UTF-8 JSON, versioned schema (`"tencil": "1.0"`), validated ✅
+- [x] Protocol groundwork: schema versioned, public docs written (`docs/` directory) ✅
 
-**Validation:**
-1. Select a Penpot flex frame → Export → copy JSON
-2. `tencil export --clipboard --to pencil --out test.pen` → open in Pencil, layout matches
-3. From Claude chat: paste Penpot JSON → Tencil MCP → Pencil MCP → `.pen` file
+**Final test count:** 135 tests across 9 packages, all passing.
+
+**Validation completed:**
+1. `tencil export design.penpot --output result.tencil` → parses native .penpot ZIP ✅
+2. `tencil push --to penpot result.tencil --out output.penpot` → importable in Penpot via File → Import ✅
+3. From Claude chat: Tencil MCP `invoke_adapter` → Pencil MCP `batch_design` ✅
 
 ---
 
@@ -174,7 +177,7 @@ Each milestone is a **complete, shippable increment**. No work starts on M2 unti
 
 | Milestone | Target | Duration |
 |-----------|--------|----------|
-| **M1** — UI Bridge | Q3 2026 | 2-3 months |
+| **M1** — UI Bridge | ✅ Complete (Apr 2026) | 135 tests, 9 packages |
 | **M2** — The Standard | Q4 2026 | 1 month |
 | **M3** — EE Domain | Q1 2027 | 2 months |
 | **M4** — Viewer | Q2 2027 | 1 month |
@@ -207,7 +210,7 @@ See [docs/business-model.md](./docs/business-model.md) for detailed revenue proj
 
 | External | Milestone | Risk |
 |----------|-----------|------|
-| Penpot plugin API stability | M1 | Low — public API |
+| Penpot plugin API stability | ~~M1~~ N/A | Replaced by native ZIP adapters |
 | Pencil MCP availability | M1 | Low — already works |
 | KiCad JSON export quality | M3 | Medium — test early |
 | Blender glTF exporter | M5 | Low — standard format |

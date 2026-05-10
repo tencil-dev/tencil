@@ -16,6 +16,7 @@
 
 import zlib from "zlib";
 import { promisify } from "util";
+import { randomUUID } from "crypto";
 import type { TencilDocument, TencilNodeBase } from "@tencil/core";
 import type { TencilFrame, TencilText, TencilRectangle, TencilEllipse } from "@tencil/schema-ui";
 import type { TencilToPenpotOptions } from "./types.js";
@@ -25,7 +26,7 @@ const deflateRaw = promisify(zlib.deflateRaw);
 // ─── UUID generator ───────────────────────────────────────────────────────────
 
 function uuid(): string {
-  return crypto.randomUUID();
+  return randomUUID();
 }
 
 // ─── Node → Penpot shape ──────────────────────────────────────────────────────
