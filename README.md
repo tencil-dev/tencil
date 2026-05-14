@@ -1,5 +1,7 @@
 # Tencil
 
+> **A Pypeline Protocol** — [Read about our mission](../PYPELINE.md) to bridge disconnected tools.
+
 **Universal design translation between disconnected tools.**
 
 Tencil is an open-source bridge between design tools. Export from Penpot, import to Pencil.dev (and eventually KiCad, Blender, medical systems). One format, infinite connections.
